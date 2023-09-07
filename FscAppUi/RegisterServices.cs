@@ -16,6 +16,7 @@ namespace FscAppUi
             {
                 options.UseSqlServer(connectionString);
             });
+            builder.Services.AddTransient<FormularDeContactDbService>();
         }
     }
 }

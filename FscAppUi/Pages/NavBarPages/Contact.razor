@@ -1,0 +1,27 @@
+﻿@page "/"
+@inject FormularDeContactDbService formularDbService;
+
+
+<h3>Contact</h3>
+<EditForm Model=@formular OnValidSubmit="HandleSubmit">
+    <label for="FormularName">Nume</label>
+    <InputText id="FormularName" @bind-Value="@formular.FormularName"></InputText>
+    <label for="FormularEmail">Email</label>
+    <InputText id="FormularEmail" @bind-Value="@formular.FormularEmail"></InputText>
+    <label for="FormularPhone">Telefon</label>
+    <InputText id="FormularEmail" @bind-Value="@formular.FormularPhone"></InputText>
+    <label for="FormularDescription">Descriere</label>
+    <InputText id="FormularDescription" @bind-Value="@formular.FormularDescription"></InputText>
+    <button type="submit">Create</button>
+</EditForm>
+
+@code {
+    FormularDeContactModel formular = new FormularDeContactModel();
+
+    public void HandleSubmit(EditContext editContext)
+    {
+        var newFormular = (FormularDeContactModel)editContext.Model;
+       
+        formularDbService.AddFormular(newFormular);
+    }
+}

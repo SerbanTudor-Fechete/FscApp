@@ -8,6 +8,7 @@ namespace FscAppUi
         public static void ConfigureServices(this WebApplicationBuilder builder)
         {
             var connectionString = builder.Configuration.GetConnectionString("SqlServer");
+
             builder.Services.AddRazorPages();
             builder.Services.AddServerSideBlazor();
             builder.Services.AddMemoryCache();

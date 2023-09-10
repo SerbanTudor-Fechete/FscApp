@@ -1,5 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
-
+using Microsoft.AspNetCore.Builder;
 
 namespace FscAppUi
 {
@@ -12,10 +12,12 @@ namespace FscAppUi
             builder.Services.AddRazorPages();
             builder.Services.AddServerSideBlazor();
             builder.Services.AddMemoryCache();
+
             builder.Services.AddDbContextFactory<DataBaseContext>((DbContextOptionsBuilder options) =>
             {
                 options.UseSqlServer(connectionString);
             });
+
             builder.Services.AddTransient<FormularDeContactDbService>();
         }
     }

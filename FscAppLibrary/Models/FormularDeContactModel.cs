@@ -12,8 +12,9 @@
         [MaxLength(100)]
         [Column(TypeName = "varchar(100)")]
         public string FormularEmail { get; set; }
-        [Required]
-        [MaxLength(12)]
+        [Required(ErrorMessage = "var")]
+        [Phone]
+        [MaxLength(10)]
         [Column(TypeName = "varchar(12)")]
         public string FormularPhone { get; set; }
         [MaxLength(2000)]

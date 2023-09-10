@@ -1,17 +1,21 @@
 ﻿@page "/"
 @inject FormularDeContactDbService formularDbService;
 
-
 <h3>Contact</h3>
+
 <EditForm Model=@formular OnValidSubmit="HandleSubmit">
+    <DataAnnotationsValidator/>
+    <ValidationSummary/>
     <label for="FormularName">Nume</label>
-    <InputText id="FormularName" @bind-Value="@formular.FormularName"></InputText>
+    <InputText id="FormularName" placeholder="Ceva" @bind-Value="@formular.FormularName"></InputText>
     <label for="FormularEmail">Email</label>
+    <ValidationMessage For=@(() => formular.FormularEmail)/>
     <InputText id="FormularEmail" @bind-Value="@formular.FormularEmail"></InputText>
     <label for="FormularPhone">Telefon</label>
     <InputText id="FormularEmail" @bind-Value="@formular.FormularPhone"></InputText>
     <label for="FormularDescription">Descriere</label>
     <InputText id="FormularDescription" @bind-Value="@formular.FormularDescription"></InputText>
+
     <button type="submit">Create</button>
 </EditForm>
 

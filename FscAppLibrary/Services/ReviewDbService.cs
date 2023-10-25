@@ -1,12 +1,15 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace FscAppLibrary.Services
+﻿namespace FscAppLibrary.Services
 {
-    internal class ReviewDbService
+    public class ReviewDbService : MainDbService
     {
+        public ReviewDbService(IDbContextFactory<DataBaseContext> dbContextFactory) : base(dbContextFactory)
+        {
+        }
+        public void AddReview(ReviewModel review)
+        {
+            using var context = _dbContextFactory.CreateDbContext();
+            context.Reviews.Add(review);
+            context.SaveChanges();
+        }
     }
 }

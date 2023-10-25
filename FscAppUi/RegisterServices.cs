@@ -1,5 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Builder;
+using Syncfusion.Blazor;
 
 namespace FscAppUi
 {
@@ -12,6 +13,7 @@ namespace FscAppUi
             builder.Services.AddRazorPages();
             builder.Services.AddServerSideBlazor();
             builder.Services.AddMemoryCache();
+            builder.Services.AddSyncfusionBlazor();
 
             builder.Services.AddDbContextFactory<DataBaseContext>((DbContextOptionsBuilder options) =>
             {
@@ -19,6 +21,9 @@ namespace FscAppUi
             });
 
             builder.Services.AddTransient<FormularDeContactDbService>();
+            builder.Services.AddTransient<ProgramareOnlineDbService>();
+            builder.Services.AddTransient<ReviewDbService>();
+            Syncfusion.Licensing.SyncfusionLicenseProvider.RegisterLicense("Ngo9BigBOggjHTQxAR8/V1NGaF1cXGFCf1FpRmJGdld5fUVHYVZUTXxaS00DNHVRdkdgWXZfd3RRQ2leWUZ0WEA=");
         }
     }
 }

@@ -4,6 +4,7 @@ using FscAppLibrary.DataAccess;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,13 +12,15 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace FscAppLibrary.Migrations
 {
     [DbContext(typeof(DataBaseContext))]
-    partial class DataBaseContextModelSnapshot : ModelSnapshot
+    [Migration("20230913135535_BuxFixes3")]
+    partial class BuxFixes3
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "7.0.11")
+                .HasAnnotation("ProductVersion", "7.0.10")
                 .HasAnnotation("Relational:MaxIdentifierLength", 128);
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
@@ -116,9 +119,6 @@ namespace FscAppLibrary.Migrations
                     b.Property<string>("ProgramareService")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("ProgramareTime")
-                        .HasColumnType("int");
-
                     b.HasKey("Id");
 
                     b.ToTable("Programari");
@@ -153,6 +153,9 @@ namespace FscAppLibrary.Migrations
 
                     b.Property<double>("ReviewRate")
                         .HasColumnType("float");
+
+                    b.Property<int>("ReviewVotes")
+                        .HasColumnType("int");
 
                     b.HasKey("Id");
 

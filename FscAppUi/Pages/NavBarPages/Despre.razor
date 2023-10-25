@@ -1,5 +1,36 @@
-﻿<h3>Despre</h3>
+﻿@page "/"
+@inject ReviewDbService reviewDbService;
+@inject DataBaseContext Context;
+
+<h3>Despre</h3>
+
+@foreach (var program in Context.Reviews)
+{
+    <p>@program.ReviewName </p>
+}
+<EditForm Model=@review OnValidSubmit="HandleSubmitReview">
+    <DataAnnotationsValidator/>
+    <label for="ReviewRate">ReviewRate</label>
+    <SfRating @bind-Value="@review.ReviewRate" id="ReviewRate" Precision="PrecisionType.Half" ShowLabel=true LabelPosition="LabelPosition.Right"></SfRating>
+    <label for="ReviewName">Nume</label>
+    <InputText id="ReviewName" placeholder="" @bind-Value="@review.ReviewName"></InputText>
+    <ValidationMessage For=@(() => review.ReviewName)/>
+    <label for="ReviewDescription">Descriere</label>
+    <InputText id="ReviewDescription" placeholder="" @bind-Value="@review.ReviewDescription"></InputText>
+    <ValidationMessage For=@(() => review.ReviewDescription) />
+    <button type="submit">Create</button>
+</EditForm>
+
+
 
 @code {
+    int variable = 0;
+    ReviewModel review = new();
 
+    public void HandleSubmitReview(EditContext editContext)
+    {
+        var newReview = (ReviewModel)editContext.Model;
+        reviewDbService.AddReview(newReview);
+
+    }
 }

@@ -1,28 +1,33 @@
-﻿@page "/"
+﻿@page "/Contact"
 @inject FormularDeContactDbService formularDbService;
 
 <h3>Contact</h3>
 
-<EditForm Model=@formular OnValidSubmit="HandleSubmit">
+<EditForm Model=@formular OnValidSubmit="HandleSubmitFormular">
     <DataAnnotationsValidator/>
-    <ValidationSummary/>
     <label for="FormularName">Nume</label>
-    <InputText id="FormularName" placeholder="Ceva" @bind-Value="@formular.FormularName"></InputText>
+    <InputText id="FormularName" placeholder="" @bind-Value="@formular.FormularName"></InputText>
+    <ValidationMessage For=@(() => formular.FormularName) />
+    <br />
     <label for="FormularEmail">Email</label>
+    <InputText id="FormularEmail" placeholder="" @bind-Value="@formular.FormularEmail"></InputText>
     <ValidationMessage For=@(() => formular.FormularEmail)/>
-    <InputText id="FormularEmail" @bind-Value="@formular.FormularEmail"></InputText>
+    <br />
     <label for="FormularPhone">Telefon</label>
-    <InputText id="FormularEmail" @bind-Value="@formular.FormularPhone"></InputText>
+    <InputText id="FormularPhone" placeholder="" @bind-Value="@formular.FormularPhone"></InputText>
+    <ValidationMessage For=@(() => formular.FormularPhone) />
+    <br />
     <label for="FormularDescription">Descriere</label>
-    <InputText id="FormularDescription" @bind-Value="@formular.FormularDescription"></InputText>
-
+    <InputText id="FormularDescription" placeholder="" @bind-Value="@formular.FormularDescription"></InputText>
+    <ValidationMessage For=@(() => formular.FormularDescription) />
+    <br />
     <button type="submit">Create</button>
 </EditForm>
 
 @code {
-    FormularDeContactModel formular = new FormularDeContactModel();
+    FormularDeContactModel formular = new();
 
-    public void HandleSubmit(EditContext editContext)
+    public void HandleSubmitFormular(EditContext editContext)
     {
         var newFormular = (FormularDeContactModel)editContext.Model;
        

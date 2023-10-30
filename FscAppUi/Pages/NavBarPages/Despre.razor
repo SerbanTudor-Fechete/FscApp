@@ -1,13 +1,9 @@
-﻿@page "/"
+﻿@page "/Despre"
 @inject ReviewDbService reviewDbService;
 @inject DataBaseContext Context;
 
 <h3>Despre</h3>
 
-@foreach (var program in Context.Reviews)
-{
-    <p>@program.ReviewName </p>
-}
 <EditForm Model=@review OnValidSubmit="HandleSubmitReview">
     <DataAnnotationsValidator/>
     <label for="ReviewRate">ReviewRate</label>
@@ -21,6 +17,10 @@
     <button type="submit">Create</button>
 </EditForm>
 
+@foreach (var program in Context.Reviews)
+{
+    <p>@program.ReviewName </p>
+}
 
 
 @code {

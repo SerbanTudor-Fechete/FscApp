@@ -1,11 +1,15 @@
 ﻿@inherits LayoutComponentBase
 
-<PageTitle>FscAppUi</PageTitle>
-
-<div class="page">
+<div>
+    <NavMenu/>
+</div>
+<div class="px-4">
     <main>
-        <article class="content px-4">
-            @Body
-        </article>
+         @Body
     </main>
+</div>
+<div>
+<footer>
+   <FooterMenu/>
+</footer>
 </div>

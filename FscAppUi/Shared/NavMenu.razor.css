@@ -1,0 +1,49 @@
+﻿.navbar-prop {
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,1) 16%, rgba(253,219,81,1) 65%);
+}
+
+::deep .nav-link {
+    color: rgb(100,100,100);
+    font-size: 20px;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-weight: 600;
+}
+
+    ::deep .nav-link:hover {
+        color: rgb(0,0,0);
+    }
+
+    ::deep .nav-link-active {
+    color: rgb(0,0,0);
+    }
+
+.logo {
+    width: 120px;
+    height: auto;
+}
+
+::deep .fa {
+    color: rgb(0,0,0);
+    border-color: rgb(0,0,0);
+    font-size: 20px;
+    padding: 10px;
+    margin: 10px;
+    margin-top: 16px;
+    text-align: center;
+    text-decoration: none;
+    border: solid;
+    transition-duration: 0.4s;
+}
+::deep .fa-facebook {
+    padding-left:13px;
+    padding-right:13px;
+}
+::deep .fa:hover {
+    color: rgba(253,219,81,1);
+    background-color: rgb(0,0,0);
+    border-color: rgb(0,0,0);
+    transition-duration: 0.4s;
+}
+
+

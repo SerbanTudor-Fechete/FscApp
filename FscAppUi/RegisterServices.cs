@@ -23,7 +23,7 @@ namespace FscAppUi
             builder.Services.AddTransient<FormularDeContactDbService>();
             builder.Services.AddTransient<ProgramareOnlineDbService>();
             builder.Services.AddTransient<ReviewDbService>();
-            Syncfusion.Licensing.SyncfusionLicenseProvider.RegisterLicense("Ngo9BigBOggjHTQxAR8/V1NGaF1cXGFCf1FpRmJGdld5fUVHYVZUTXxaS00DNHVRdkdgWXZfd3RRQ2leWUZ0WEA=");
+            Syncfusion.Licensing.SyncfusionLicenseProvider.RegisterLicense("Mjc4NjAxM0AzMjMzMmUzMDJlMzBaL2VuYU5MN2UraVgyV01pRi9PK2N6elFZZnZ1YWk2WXJmOGFpRkpNMUwwPQ==");
         }
     }
 }

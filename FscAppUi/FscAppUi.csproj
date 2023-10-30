@@ -7,20 +7,29 @@
 	</PropertyGroup>
 
 	<ItemGroup>
-		<Folder Include="Components\" />
-		<Folder Include="Models\" />
-		<Folder Include="wwwroot\images\" />
+	  <None Remove="Shared\FooterMenu.razor.css" />
+	  <None Remove="Shared\NavMenu.razor.css" />
 	</ItemGroup>
 
 	<ItemGroup>
-	  <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="7.0.11">
+	  <Content Include="Shared\FooterMenu.razor.css" />
+	  <Content Include="Shared\NavMenu.razor.css" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<Folder Include="Components\" />
+		<Folder Include="Models\" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="7.0.13">
 	    <PrivateAssets>all</PrivateAssets>
 	    <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
 	  </PackageReference>
-	  <PackageReference Include="Syncfusion.Blazor.Calendars" Version="23.1.36" />
-	  <PackageReference Include="Syncfusion.Blazor.Core" Version="23.1.36" />
-	  <PackageReference Include="Syncfusion.Blazor.Themes" Version="23.1.36" />
-	  <PackageReference Include="Syncfusion.Licensing" Version="23.1.36" />
+	  <PackageReference Include="Syncfusion.Blazor.Calendars" Version="23.1.42" />
+	  <PackageReference Include="Syncfusion.Blazor.Core" Version="23.1.42" />
+	  <PackageReference Include="Syncfusion.Blazor.Themes" Version="23.1.42" />
+	  <PackageReference Include="Syncfusion.Licensing" Version="23.1.42" />
 	</ItemGroup>
 
 	<ItemGroup>

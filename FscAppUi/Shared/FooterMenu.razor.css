@@ -1,0 +1,15 @@
+﻿.logo {
+    width: 200px;
+    height: auto;
+}
+
+.row{
+    margin-right:0px;
+   
+}
+.background {
+    background-image: url(/images/Footer.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}

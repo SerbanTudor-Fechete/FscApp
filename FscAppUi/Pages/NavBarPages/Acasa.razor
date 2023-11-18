@@ -1,7 +1,52 @@
 ﻿@page "/"
 
+<div id="b1" class="row background">
+    <div class="col-2">
+    </div>
+    <div class="col-8 text-center">
+        <SfCarousel >
+            <CarouselItem>
+                <div id="b2" class="background">
+                    <div class="paragraphformat">
+                        BUN VENIT LA FUN
+                        <br />
+                        SHOOTING CENTER
+                        <a href="/Despre" class="buttonformat ms-5">Despre  --></a>
+                    </div>
+                </div>
+            </CarouselItem>
+            <CarouselItem>
+                <div id="b3" class="background">
+                    <div class="paragraphformat">
+                        DEVINO MAI BUN
+                        <br />
+                        ALATURI DE NOI
+                        <a href="/Servicii" class="buttonformat ms-5">Servicii  --></a>
+                    </div>
+                </div>
+            </CarouselItem>
+            <CarouselItem>
+                <div id="b4" class="background">
+                    <div class="paragraphformat">
+                        DESCOPERA CE 
+                        <br />
+                        AVEM DE OFERIT
+                        <a href="/Media" class="buttonformat ms-5">Media  --></a>
+                    </div>
+                </div>
+            </CarouselItem>
+        </SfCarousel>
+    </div>
+    <div class="col-2">
+    </div>
+</div>
 
 
+<style>
+    .e-carousel .e-carousel-indicators .e-indicator-bars .e-indicator-bar .e-indicator {
+        color: var(--maincolor);
+    }
+</style>
 @code {
 
 }

@@ -28,6 +28,7 @@
 	  </PackageReference>
 	  <PackageReference Include="Syncfusion.Blazor.Calendars" Version="23.1.42" />
 	  <PackageReference Include="Syncfusion.Blazor.Core" Version="23.1.42" />
+	  <PackageReference Include="Syncfusion.Blazor.Navigations" Version="23.1.42" />
 	  <PackageReference Include="Syncfusion.Blazor.Themes" Version="23.1.42" />
 	  <PackageReference Include="Syncfusion.Licensing" Version="23.1.42" />
 	</ItemGroup>

@@ -1,0 +1,37 @@
+﻿#b1 {
+    background-color: rgba(21,20,18,255);
+}
+#b2 {
+    background-image: url('/images/Acasa2.jpg');
+}
+#b3 {
+    background-image: url('/images/Acasa3.jpg');
+}
+#b4 {
+    background-image: url('/images/Acasa4.jpg');
+}
+.paragraphformat {
+    justify-content: center;
+    height: 45rem;
+    color: rgb(255, 255, 255);
+    font-size: 5.125rem;
+    font-weight: 800;
+    line-height: 4.8rem;
+
+}
+
+.buttonformat {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: rgb(255,255,255);
+    border: solid;
+    border-color: var(--maincolor);
+    padding: 0rem 1.3rem 0rem 1.3rem;
+    transition-duration: 0.4s;
+}
+    .buttonformat:hover {
+        color: rgb(0,0,0);
+        background-color: var(--maincolor);
+        transition-duration: 0.4s;
+    }
+

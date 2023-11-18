@@ -29,6 +29,13 @@ a {
     color: rgb(120,120,120);
 }
 
+#p1 {
+    text-align: justify;
+    font-size: 1.25rem;
+    font-weight: 300;
+    color: rgb(120,120,120);
+}
+
 .social {
     color: rgb(0,0,0);
     background-color: var(--maincolor);

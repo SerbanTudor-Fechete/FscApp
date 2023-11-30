@@ -4,7 +4,12 @@
 
 :root {
     --maincolor: rgba(253,219,81,1);
+    --backgreycolor: rgba(21,20,18,255);
+    --backblackcolor: rgba(15,14,12,255);
+    --greycolor: rgb(140,140,140);
+    --blackcolor: rgb(120,120,120);
 }
+
 html, body, div{
     font-family: 'Barlow Semi Condensed', sans-serif;
 }
@@ -19,27 +24,90 @@ a {
     background-size: cover;
 }
 
-.row {
-    margin: 0rem;
-    padding: 0rem;
-}
-.paragraphformat {
-    display: flex;
-    align-items: center;
-    color: rgb(120,120,120);
+#bmain {
+    background-image: url('/images/Background.jpg');
+    padding-top: 18rem;
+    padding-bottom: 18rem;
 }
 
-#p1 {
+#bmain1 {
+    background-image: url('/images/Background1.jpg');
+    padding-top: 18rem;
+    padding-bottom: 18rem;
+}
+
+#bmain2 {
+    background-image: url('/images/Acasa5.jpg');
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+}
+
+#bbackgreycolor {
+    background-color: var(--backgreycolor);
+}
+
+#bbackblackcolor {
+    background-color: var(--backblackcolor);
+}
+
+#bblack {
+    background-color: black;
+}
+
+.row {
+    margin: 0rem 0rem 0rem 0rem;
+    padding: 0rem 0rem 0rem 0rem;
+}
+
+.paragraphformat {
     text-align: justify;
     font-size: 1.25rem;
     font-weight: 300;
-    color: rgb(120,120,120);
+    color: var(--blackcolor);
+}
+
+.titleformat {
+    color: white;
+    font-size: 5.125rem;
+    font-weight: 800;
+    line-height: 4.8rem;
+}
+
+.minititleformat {
+    display: flex;
+    align-items: end;
+    color: white;
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+
+.undertitleformat {
+    color: var(--maincolor);
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.mentionsformat {
+    font-size: 1.1rem;
+    color: var(--blackcolor);
+    font-weight: 300;
+}
+
+.displayer {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.padding {
+    padding-bottom: 6rem;
+    padding-top: 6rem;
 }
 
 .social {
-    color: rgb(0,0,0);
+    color: black;
     background-color: var(--maincolor);
-    border-color: rgb(0,0,0);
+    border-color: black;
     border: solid;
     padding: 0.625rem;
     text-align: center;
@@ -48,8 +116,8 @@ a {
 
     .social:hover {
         color: var(--maincolor);
-        background-color: rgb(0,0,0);
-        border-color: rgb(0,0,0);
+        background-color: black;
+        border-color: black;
         transition-duration: 0.4s;
     }
 
@@ -58,16 +126,95 @@ a {
     padding-right: 0.8rem;
 }
 
+.icon {
+    color: var(--maincolor);
+    border: solid;
+    padding: 2rem 2rem 2rem 2rem;
+    margin: -1.4rem 3rem 0rem -4.4rem;
+}
+
+.buttonformat {
+    color: white;
+    background-color: transparent;
+    font-size: 1.25rem;
+    font-weight: 600;
+    border: solid;
+    border-color: var(--maincolor);
+    padding: 1.2rem 1.4rem 1.2rem 1.4rem;
+    transition-duration: 0.4s;
+}
+
+    .buttonformat:hover {
+        color: black;
+        background-color: var(--maincolor);
+        transition-duration: 0.4s;
+    }
+
+.inputbox {
+    color: white;
+    background-color: black;
+    border: solid;
+    border-width: 1px;
+    border-color: var(--blackcolor);
+    width: 25rem;
+    margin: 1rem 0rem 1rem 0rem;
+    padding: 1.2rem 1rem 1rem 1.2rem;
+    outline: none;
+    transition-duration: 0.4s;
+}
+    .inputbox:focus {
+        border-color: var(--maincolor);
+        transition-duration: 0.4s;
+    }
+
+.inputboxm {
+    width: 50rem;
+    height: 25rem;
+    resize: none;
+}
+
+input::placeholder {
+    font-size: 1.2rem;
+}
+
 .valid.modified:not([type=checkbox]) {
-    outline: 1px solid #26b050;
+    border: solid;
+    border-width: 1px;
+    border-color: lawngreen;
 }
 
 .invalid {
-    outline: 1px solid red;
+    border: solid;
+    border-width: 1px;
+    border-color: red;
 }
 
 .validation-message {
     color: red;
+    font-size: 1rem;
+}
+
+textarea::placeholder {
+    font-size: 1.2rem;
+}
+
+::-webkit-scrollbar {
+    background-color: black;
+    width: 7px;
+}
+::-webkit-scrollbar-thumb {
+    background-color: var(--maincolor);
+}
+    ::-webkit-scrollbar-thumb:hover {
+        background-color: white;
+    }
+
+::-webkit-scrollbar-track {
+    background-color: black;
+}
+
+::-webkit-scrollbar-corner {
+    background-color: black;
 }
 
 #blazor-error-ui {

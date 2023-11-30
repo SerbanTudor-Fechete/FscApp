@@ -5,7 +5,7 @@
 }
 
 #b1 {
-    background: linear-gradient(90deg, var(--maincolor) 30%, rgba(33,32,30,255) 30%);
+    background: linear-gradient(90deg, var(--maincolor) 30%, var(--backgreycolor) 30%);
     padding-top: 2rem;
     padding-bottom: 2rem;
 }
@@ -25,45 +25,35 @@
     font-size: 1.6rem;
 }
 
-.contactformat {
-    font-size: 1.38rem;
-    font-weight: 500;
-    padding-left: 0.6rem;
-    color: var(--maincolor);
-}
-
-.titleformat {
-    font-size: 1.38rem;
-    font-weight: 500;
-    color: rgb(255 255 255);
-}
-
 .fa-bullseye {
     color: var(--maincolor);
     font-size: 1.25rem;
 }
 
     .fa-bullseye:hover + .textformat {
-        color: rgb(255 255 255);
-        transition-duration: 0.4s;
+    color: white;
+    transition-duration: 0.4s;
     }
 
+.contactformat {
+    color: var(--maincolor);
+    font-size: 1.38rem;
+    font-weight: 500;
+    padding-left: 0.7rem;
+}
+
 .textformat {
+    color: var(--blackcolor);
     font-size: 1.25rem;
     font-weight: 400;
-    color: rgb(120,120,120);
     padding-left: 0.5rem;
     transition-duration: 0.4s;
 }
 
     .textformat:hover {
-        color: rgb(255 255 255);
+        color: white;
     }
 
-
-
-#p2 {
-    font-size: 1rem;
-    font-weight: 300;
-    color: rgb(140,140,140);
+.mentionsformat {
+    margin-top: 0.7rem;
 }

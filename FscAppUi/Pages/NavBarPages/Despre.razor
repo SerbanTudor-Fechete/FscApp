@@ -2,7 +2,14 @@
 @inject ReviewDbService reviewDbService;
 @inject DataBaseContext Context;
 
-<h3>Despre</h3>
+<div id="bmain1" class="row background">
+    <div class="titleformat displayer mb-3">
+        DESPRE
+    </div>
+    <div class="undertitleformat displayer">
+        LASA MAI JOS UN COMENTARIU
+    </div>
+</div>
 
 <EditForm Model=@review OnValidSubmit="HandleSubmitReview">
     <DataAnnotationsValidator/>
@@ -16,21 +23,27 @@
     <ValidationMessage For=@(() => review.ReviewDescription) />
     <button type="submit">Create</button>
 </EditForm>
-
 @foreach (var program in Context.Reviews)
 {
-    <p>@program.ReviewName </p>
+    <div>
+        @program.ReviewRate
+    </div>
+    <div>
+        @program.ReviewName
+    </div>
+    <div>
+        @program.ReviewDescription
+    </div>
 }
 
 
 @code {
-    int variable = 0;
     ReviewModel review = new();
-
     public void HandleSubmitReview(EditContext editContext)
     {
         var newReview = (ReviewModel)editContext.Model;
         reviewDbService.AddReview(newReview);
+        review = new ReviewModel();
 
     }
 }

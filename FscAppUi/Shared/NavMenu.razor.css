@@ -3,7 +3,7 @@
 }
 
 .logo {
-    width: 7.5rem;
+    width: 8rem;
     height: auto;
 }
 
@@ -16,17 +16,17 @@
 }
 
 ::deep .nav-link {
-    color: rgb(100,100,100);
+    color: var(--blackcolor);
     font-size: 1.3rem;
     font-weight: 600;
 }
 
     ::deep .nav-link:hover {
-        color: rgb(0,0,0);
+        color: black;
     }
 
     ::deep .nav-link-active {
-    color: rgb(0,0,0);
+        color: black;
     }
 
 

@@ -6,7 +6,6 @@
         {
             "Simulator Pistol",
             "Simulator Vanatoare",
-            "Aniversari"
         };
 
         public List<int> persoane = new()

@@ -1,8 +1,6 @@
 ﻿@page "/Programare"
 @inject ProgramareOnlineDbService programareDbService;
 
-<h3>Programare</h3>
-
 <EditForm Model=@programare OnValidSubmit="HandleSubmitProgramare">
     <SfDatePicker TValue="DateTime" Min="@serviciiProperty.MinDate" Max="serviciiProperty.MaxDate" Placeholder="Alege data" @bind-Value="@programare.ProgramareDateTime"></SfDatePicker>
     <SfTimePicker TValue="DateTime" Min="@serviciiProperty.MinTime" Max="serviciiProperty.MaxTime" Placeholder="Alege ora" @bind-Value=@programare.ProgramareDateTime Format="HH:mm" Step="60"></SfTimePicker>

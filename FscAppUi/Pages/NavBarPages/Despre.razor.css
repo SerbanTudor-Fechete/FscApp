@@ -1,1 +1,20 @@
-﻿
+﻿#byellow {
+    background-color: var(--maincolor);
+}
+
+.despreformat {
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: black;
+}
+
+.minidisplayer {
+    display: flex;
+    align-items: center;
+}
+
+.comentsformat{
+    border: solid;
+    border-color: white;
+    border-width: 2px;
+}

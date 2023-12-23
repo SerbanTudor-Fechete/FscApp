@@ -2,14 +2,16 @@
 @inject FormularDeContactDbService formularDbService;
 
 <div id="bmain" class="row background">
-    <div class="displayer titleformat mb-3">
+    <div class="displayer titleformat mb-3 animation">
         CONTACT
     </div>
-    <div class="displayer undertitleformat">
+    <div class="displayer undertitleformat animation">
         AI O ÎNTREBARE? INTRĂ ÎN LEGĂTURĂ CU NOI!
     </div>
 </div>
 <div id="bbackblackcolor" class="row background justify-content-center padding">
+    <div id="map">
+    </div>
     <div id="bblack" class="col-3 background p-5 pt-0">
         <div class="minititleformat mb-3">
             <i class="fa fa-globe icon"></i>
@@ -58,7 +60,7 @@
 </div>
 
 <div id="bbackgreycolor" class="row background pt-5 pb-4">
-    <div class="displayer undertitleformat">
+    <div id="form" class="displayer undertitleformat">
         FORMULAR DE CONTACT
     </div>
     <div class="displayer titleformat mt-3">
@@ -88,14 +90,34 @@
     </EditForm>
 </div>
 
-@code {
-    FormularDeContactModel formular = new();
+@if(isShown == true)
+{
+<div class="messageformat">
+    Mulțumim pentru mesajul dumneavoastră! Acesta a fost trimis echipei noastre.
+</div>
+}
 
-    public void HandleSubmitFormular(EditContext editContext)
-    {
+
+
+@code {
+    private FormularDeContactModel formular = new();
+    private bool isShown = false;
+
+    private void HandleSubmitFormular(EditContext editContext)
+    {   
         var newFormular = (FormularDeContactModel)editContext.Model;
         formularDbService.AddFormular(newFormular);
         formular = new FormularDeContactModel();
+        HandleMessage();
+
+    }
+
+    private async void HandleMessage()
+    {
+        isShown = true;
+        await Task.Delay(5000);
+        isShown = false;
+        StateHasChanged();
     }
 }
 

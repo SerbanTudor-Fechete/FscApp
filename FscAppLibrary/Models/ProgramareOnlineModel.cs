@@ -7,9 +7,9 @@
 
         public string ProgramareService { get; set; }
 
-        public int ProgramarePersons { get; set; }
+        public string ProgramarePersons { get; set; }
 
-        public int ProgramareTime { get; set; }
+        public string ProgramareTime { get; set; }
 
         public DateTime ProgramareDateTime { get; set; }
 

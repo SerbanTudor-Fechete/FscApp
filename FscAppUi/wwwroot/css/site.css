@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;400;500;600;700;800;900&family=Barlow+Semi+Condensed:wght@300;400;500;600;700;800;900&family=Barlow:wght@200;300;400&display=swap');
 
 :root {
-    --maincolor: rgba(253,219,81,1);
+    --maincolor: rgba(253,219,81,255);
     --backgreycolor: rgba(21,20,18,255);
     --backblackcolor: rgba(15,14,12,255);
     --greycolor: rgb(140,140,140);
@@ -93,9 +93,24 @@ a {
     font-weight: 300;
 }
 
+.messageformat {
+    font-size: 1.3rem;
+    background-color: black;
+    color: white;
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    margin-top: 1.7rem;
+    margin-left: 1.7rem;
+    padding: 0.5rem 0.8rem 0.5rem 0.8rem;
+    border: solid;
+    border-width: 2px;
+    border-color: var(--maincolor);
+}
+
 .displayer {
     display: flex;
-    align-content: center;
+    align-items: center;
     justify-content: center;
 }
 
@@ -215,6 +230,23 @@ textarea::placeholder {
 
 ::-webkit-scrollbar-corner {
     background-color: black;
+}
+
+@keyframes titleAnimation {
+    from { 
+        opacity: 0;
+       transform:translate(0rem,3rem);
+    }
+    to {
+        opacity: 1;
+        transform: translate(0rem,0rem);
+    }
+}
+
+.animation {
+    animation-name: titleAnimation;
+    animation-duration: 1.5s;
+    animation-timing-function: ease;
 }
 
 #blazor-error-ui {

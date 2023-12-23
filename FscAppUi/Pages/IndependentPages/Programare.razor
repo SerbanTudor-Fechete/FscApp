@@ -1,56 +1,88 @@
 ﻿@page "/Programare"
 @inject ProgramareOnlineDbService programareDbService;
 
-<EditForm Model=@programare OnValidSubmit="HandleSubmitProgramare">
-    <SfDatePicker TValue="DateTime" Min="@serviciiProperty.MinDate" Max="serviciiProperty.MaxDate" Placeholder="Alege data" @bind-Value="@programare.ProgramareDateTime"></SfDatePicker>
-    <SfTimePicker TValue="DateTime" Min="@serviciiProperty.MinTime" Max="serviciiProperty.MaxTime" Placeholder="Alege ora" @bind-Value=@programare.ProgramareDateTime Format="HH:mm" Step="60"></SfTimePicker>
+<div id="bmain" class="row background">
+    <div class="displayer titleformat mb-3">
+        PROGRAMARE
+    </div>
+    <div class="displayer undertitleformat">
+        FĂ-ȚI O REZERVARE DOAR PENTRU TINE 
+    </div>
+</div>
 
+<div id="bbackgreycolor" class="row background pt-5 pb-4">
+    <div id="form" class="displayer undertitleformat">
+        FORMULAR DE PROGRAMARE
+    </div>
+    <div class="displayer titleformat mt-3">
+        ALEGE CAND SA VII LA NOI
+    </div>
+    <div class="displayer minititleformat pt-3">
+        ----------
+    </div>
+</div>
+
+<div id="bbackgreycolor" class="background text-center pt-3 pb-5">
+<EditForm Model=@programare OnValidSubmit="HandleSubmitProgramare">
+        <div class="row justify-content-center">
+            <div class="col-4">
+                <SfDatePicker TValue="DateTime" Min="@serviciiProperty.MinDate" Max="serviciiProperty.MaxDate" Placeholder="Alege data" @bind-Value="@programare.ProgramareDateTime"></SfDatePicker>
+            </div>
+            <div class="col-4">
+                <SfTimePicker TValue="DateTime" Min="@serviciiProperty.MinTime" Max="serviciiProperty.MaxTime" Placeholder="Alege ora" @bind-Value=@programare.ProgramareDateTime Format="HH:mm" Step="60"></SfTimePicker>
+            </div>
+        </div>
+        <br />
     <DataAnnotationsValidator/>
-    <label for="ProgramareService">Serviciu</label>
-    <InputSelect id="ProgramareService" @bind-Value="programare.ProgramareService">
+    <InputSelect class="inputbox" @bind-Value="programare.ProgramareService">
+        <option>Alege serviciul...</option> 
         @foreach (var servicii in serviciiProperty.servicii) 
         {
             <option value="@servicii">@servicii</option>
         }
     </InputSelect>
-    <label for="ProgramarePersons">Numar de persoane</label>
-    <InputSelect id="ProgramarePersons" @bind-Value="programare.ProgramarePersons">
+        <br />
+    <InputSelect class="inputbox" @bind-Value="programare.ProgramarePersons">
+        <option>Alege numarul de persoane...</option> 
         @foreach (var persoane in serviciiProperty.persoane)
         {
             <option value="@persoane">@persoane</option>
         }
     </InputSelect>
-    <label for="ProgramareTime">Timp</label>
-    <InputSelect id="ProgramareTime" @bind-Value="programare.ProgramareTime">
+        <br />
+    <InputSelect class="inputbox" @bind-Value="programare.ProgramareTime">
+        <option>Alege numarul de minute...</option>
         @foreach (var timp in serviciiProperty.timp)
         {
             <option value="@timp">@timp</option>
         }
     </InputSelect>
-    <label for="ProgramareName">Nume</label>
-    <InputText id="ProgramareName" placeholder="" @bind-Value="@programare.ProgramareName"></InputText>
+        <br />
+        <InputText class="inputbox" id="ProgramareName" placeholder="Nume" @bind-Value="@programare.ProgramareName"></InputText>
     <ValidationMessage For=@(() => programare.ProgramareName) />
-    <label for="ProgramareEmail">Email</label>
-    <InputText id="ProgramareEmail" placeholder="" @bind-Value="@programare.ProgramareEmail"></InputText>
+        <br />
+        <InputText class="inputbox" id="ProgramareEmail" placeholder="Email" @bind-Value="@programare.ProgramareEmail"></InputText>
     <ValidationMessage For=@(() => programare.ProgramareEmail)/>
-    <label for="ProgramarePhone">Telefon</label>
-    <InputText id="ProgramarePhone" placeholder="" @bind-Value="@programare.ProgramarePhone"></InputText>
+        <br />
+        <InputText class="inputbox" id="ProgramarePhone" placeholder="Telefon" @bind-Value="@programare.ProgramarePhone"></InputText>
     <ValidationMessage For=@(() => programare.ProgramarePhone)/>
-    <label for="ProgramareDescription">Descriere</label>
-    <InputText id="ProgramareDescription" placeholder="" @bind-Value="@programare.ProgramareDescription"></InputText>
+        <br />
+        <InputTextArea class="inputbox inputboxm" id="ProgramareDescription" placeholder="Mesaj" @bind-Value="@programare.ProgramareDescription"></InputTextArea>
     <ValidationMessage For=@(() => programare.ProgramareDescription) />
-    <button type="submit">Create</button>
+        <br />
+        <button class="buttonformat mt-4" type="submit">Trimite</button>
 </EditForm>
-
+</div>
 
 
 
 @code {
-    ServiciiProperty serviciiProperty = new();
-    ProgramareOnlineModel programare = new();
-    public void HandleSubmitProgramare(EditContext editContext)
+    private ServiciiProperty serviciiProperty = new();
+    private ProgramareOnlineModel programare = new();
+    private void HandleSubmitProgramare(EditContext editContext)
     {   
         var newProgramare = (ProgramareOnlineModel)editContext.Model;
         programareDbService.AddProgramare(newProgramare);
+        programare = new ProgramareOnlineModel();
     }
 }

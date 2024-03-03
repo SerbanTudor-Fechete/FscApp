@@ -13,7 +13,7 @@
 
 <div id="bbackblackcolor" class="row justify-content-center pt-5 pb-5">
     <div class="col-5">
-        <img src="/images/Despre.jpg" width="100%" />
+        <img src="/images/Despre.jpg"/>
     </div>
     <div id="byellow" class="col-3 text-center displayer">
         <div class="displayer despreformat">
@@ -59,12 +59,20 @@
     <EditForm Model=@review OnValidSubmit="HandleSubmitReview">
     <DataAnnotationsValidator/>
         <br />
-        <InputSelect class="inputbox" @bind-Value="@review.ReviewRate">
-            <option>Alege numarul de stele...</option>
+        <span class="fa fa-star @color[0]"></span>
+        <span class="fa fa-star @color[1]"></span>
+        <span class="fa fa-star @color[2]"></span>
+        <span class="fa fa-star @color[3]"></span>
+        <span class="fa fa-star @color[4]"></span>
+        <br />
+        <InputSelect class="inputbox" @bind-Value="@review.ReviewRate"  >
+            <option value="0">Alege nota pe care dorești să o dai ...</option>
             @foreach (var stele in serviciiProperty.stele)
             {
-                <option value="@stele">@stele</option>
+                <option value="@stele">@stele  /  5</option>
+                ColorSwitch(review.ReviewRate);
             }
+                StateHasChanged();
         </InputSelect>
         <br />
         <InputText class="inputbox" placeholder="Nume" @bind-Value="@review.ReviewName"></InputText>
@@ -121,6 +129,15 @@
     private ReviewModel review = new();
     private ServiciiProperty serviciiProperty = new();
     private bool isShown = false;
+    private List<String> color = new()
+    {   
+        "noncolor",
+        "noncolor",
+        "noncolor",
+        "noncolor",
+        "noncolor",
+        "noncolor"
+    };
 
     private void HandleSubmitReview(EditContext editContext)
     {
@@ -136,5 +153,18 @@
         await Task.Delay(5000);
         isShown = false;
         StateHasChanged();
+    }
+
+    private void ColorSwitch(double stars)
+    {
+        for(int i=0; i<=5; i++)
+        {
+            color[i] = "noncolor";
+            if(stars == i)
+            {
+                for (int j = 0; j < i; j++)
+                    color[j] = "color";
+            }
+        }
     }
 }

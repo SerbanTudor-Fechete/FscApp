@@ -18,3 +18,19 @@
     border-color: white;
     border-width: 2px;
 }
+
+.fa-star {
+    font-size: 1.8rem;
+}
+
+.color {
+    color: var(--maincolor);
+}
+
+.noncolor {
+    color: var(--greycolor);
+}
+
+img {
+    width: 100%;
+}

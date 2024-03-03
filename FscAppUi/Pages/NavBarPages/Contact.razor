@@ -74,16 +74,16 @@
 <div id="bbackgreycolor" class="background text-center pt-3 pb-5">
     <EditForm Model=@formular OnValidSubmit="HandleSubmitFormular">
         <DataAnnotationsValidator />
-        <InputText class="inputbox" id="FormularName" placeholder="Nume" @bind-Value="@formular.FormularName"></InputText>
+        <InputText class="inputbox" placeholder="Nume" @bind-Value="@formular.FormularName"></InputText>
         <ValidationMessage For=@(() => formular.FormularName) />
         <br />
-        <InputText class="inputbox" id="FormularEmail" placeholder="Email" @bind-Value="@formular.FormularEmail"></InputText>
+        <InputText class="inputbox" placeholder="Email" @bind-Value="@formular.FormularEmail"></InputText>
         <ValidationMessage For=@(() => formular.FormularEmail) />
         <br />
-        <InputText class="inputbox" id="FormularPhone" placeholder="Telefon" @bind-Value="@formular.FormularPhone"></InputText>
+        <InputText class="inputbox" placeholder="Telefon" @bind-Value="@formular.FormularPhone"></InputText>
         <ValidationMessage For=@(() => formular.FormularPhone) />
         <br />
-        <InputTextArea class="inputbox inputboxm" id="FormularDescription" placeholder="Mesaj" @bind-Value="@formular.FormularDescription"></InputTextArea>
+        <InputTextArea class="inputbox inputboxm" placeholder="Mesaj" @bind-Value="@formular.FormularDescription"></InputTextArea>
         <ValidationMessage For=@(() => formular.FormularDescription) />
         <br />
         <button class="buttonformat mt-4" type="submit">Trimite</button>

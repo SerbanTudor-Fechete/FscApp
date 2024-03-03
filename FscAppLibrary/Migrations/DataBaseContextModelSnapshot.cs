@@ -22,35 +22,6 @@ namespace FscAppLibrary.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
-            modelBuilder.Entity("FscAppLibrary.Models.ComentariuModel", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
-
-                    b.Property<DateTime>("ComentariuDateTime")
-                        .HasColumnType("datetime2");
-
-                    b.Property<string>("ComentariuDescription")
-                        .IsRequired()
-                        .HasMaxLength(1000)
-                        .HasColumnType("varchar(1000)");
-
-                    b.Property<string>("ComentariuName")
-                        .IsRequired()
-                        .HasMaxLength(50)
-                        .HasColumnType("varchar(50)");
-
-                    b.Property<int>("ComentariuVotes")
-                        .HasColumnType("int");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("Comentarii");
-                });
-
             modelBuilder.Entity("FscAppLibrary.Models.FormularDeContactModel", b =>
                 {
                     b.Property<int>("Id")
@@ -132,12 +103,6 @@ namespace FscAppLibrary.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<int?>("ComentariuId")
-                        .HasColumnType("int");
-
-                    b.Property<int>("ReviewComents")
-                        .HasColumnType("int");
-
                     b.Property<DateTime>("ReviewDateTime")
                         .HasColumnType("datetime2");
 
@@ -156,18 +121,7 @@ namespace FscAppLibrary.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("ComentariuId");
-
                     b.ToTable("Reviews");
-                });
-
-            modelBuilder.Entity("FscAppLibrary.Models.ReviewModel", b =>
-                {
-                    b.HasOne("FscAppLibrary.Models.ComentariuModel", "Comentariu")
-                        .WithMany()
-                        .HasForeignKey("ComentariuId");
-
-                    b.Navigation("Comentariu");
                 });
 #pragma warning restore 612, 618
         }

@@ -1,36 +1,123 @@
 ﻿@page "/Contact"
 @inject FormularDeContactDbService formularDbService;
 
-<h3>Contact</h3>
+<div id="bmain" class="row background">
+    <div class="displayer titleformat mb-3 animation">
+        CONTACT
+    </div>
+    <div class="displayer undertitleformat animation">
+        AI O ÎNTREBARE? INTRĂ ÎN LEGĂTURĂ CU NOI!
+    </div>
+</div>
+<div id="bbackblackcolor" class="row background justify-content-center padding">
+    <div id="map">
+    </div>
+    <div id="bblack" class="col-3 background p-5 pt-0">
+        <div class="minititleformat mb-3">
+            <i class="fa fa-globe icon"></i>
+            ADRESA
+        </div>
+        <div class="pt-2 paragraphformat">
+            Comuna Groși 
+            <br/>
+            Strada Mihai Viteazul
+            <br />
+            Numărul 67
+        </div>
+    </div>
+    <div class="col-1">
+    </div>
+    <div id="bblack" class="col-3 background p-5 pt-0">
+        <div class="minititleformat mb-3">
+            <i class="fa fa-calendar icon"></i>
+            PROGRAM
+        </div>
+        <div class="pt-2 paragraphformat">
+            Luni-Vineri: 17.00 – 21.00
+            <br />
+            Sâmbătă: 10.00 – 18.00
+            <br />
+            Duminică: 14.00 – 19.00
+        </div>
+    </div>
+    <div class="col-1">
+    </div>
+    <div id="bblack" class="col-3 background p-5 pt-0">
+        <div class="minititleformat mb-3">
+            <i class="fa fa-phone icon"></i>
+            CONTACT
+        </div>
+        <div class="pt-2 paragraphformat">
+            Email: office@simulatordetir.ro
+            <br />
+            Telefon: 0741 096 823
+        </div>
+    </div>
+</div>
 
-<EditForm Model=@formular OnValidSubmit="HandleSubmitFormular">
-    <DataAnnotationsValidator/>
-    <label for="FormularName">Nume</label>
-    <InputText id="FormularName" placeholder="" @bind-Value="@formular.FormularName"></InputText>
-    <ValidationMessage For=@(() => formular.FormularName) />
-    <br />
-    <label for="FormularEmail">Email</label>
-    <InputText id="FormularEmail" placeholder="" @bind-Value="@formular.FormularEmail"></InputText>
-    <ValidationMessage For=@(() => formular.FormularEmail)/>
-    <br />
-    <label for="FormularPhone">Telefon</label>
-    <InputText id="FormularPhone" placeholder="" @bind-Value="@formular.FormularPhone"></InputText>
-    <ValidationMessage For=@(() => formular.FormularPhone) />
-    <br />
-    <label for="FormularDescription">Descriere</label>
-    <InputText id="FormularDescription" placeholder="" @bind-Value="@formular.FormularDescription"></InputText>
-    <ValidationMessage For=@(() => formular.FormularDescription) />
-    <br />
-    <button type="submit">Create</button>
-</EditForm>
+<div id="bbackblackcolor" class="background displayer padding pt-0">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1344.7586803842132!2d23.61006743900328!3d47.61607370086289!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4737d963085aa431%3A0x403fef6255932cff!2sstrada%20Mihai%20Viteazu%2067%2C%20Gro%C8%99i%20437147!5e0!3m2!1sro!2sro!4v1700768605826!5m2!1sro!2sro" width="1200" height="350"></iframe>
+</div>
+
+<div id="bbackgreycolor" class="row background pt-5 pb-4">
+    <div id="form" class="displayer undertitleformat">
+        FORMULAR DE CONTACT
+    </div>
+    <div class="displayer titleformat mt-3">
+        TRIMITE UN MESAJ
+    </div>
+    <div class="displayer minititleformat pt-3">
+            ----------
+    </div>
+</div>
+
+<div id="bbackgreycolor" class="background text-center pt-3 pb-5">
+    <EditForm Model=@formular OnValidSubmit="HandleSubmitFormular">
+        <DataAnnotationsValidator />
+        <InputText class="inputbox" placeholder="Nume" @bind-Value="@formular.FormularName"></InputText>
+        <ValidationMessage For=@(() => formular.FormularName) />
+        <br />
+        <InputText class="inputbox" placeholder="Email" @bind-Value="@formular.FormularEmail"></InputText>
+        <ValidationMessage For=@(() => formular.FormularEmail) />
+        <br />
+        <InputText class="inputbox" placeholder="Telefon" @bind-Value="@formular.FormularPhone"></InputText>
+        <ValidationMessage For=@(() => formular.FormularPhone) />
+        <br />
+        <InputTextArea class="inputbox inputboxm" placeholder="Mesaj" @bind-Value="@formular.FormularDescription"></InputTextArea>
+        <ValidationMessage For=@(() => formular.FormularDescription) />
+        <br />
+        <button class="buttonformat mt-4" type="submit">Trimite</button>
+    </EditForm>
+</div>
+
+@if(isShown == true)
+{
+<div class="messageformat">
+    Mulțumim pentru mesajul dumneavoastră! Acesta a fost trimis echipei noastre.
+</div>
+}
+
+
 
 @code {
-    FormularDeContactModel formular = new();
+    private FormularDeContactModel formular = new();
+    private bool isShown = false;
 
-    public void HandleSubmitFormular(EditContext editContext)
-    {
+    private void HandleSubmitFormular(EditContext editContext)
+    {   
         var newFormular = (FormularDeContactModel)editContext.Model;
-       
         formularDbService.AddFormular(newFormular);
+        formular = new FormularDeContactModel();
+        HandleMessage();
+
+    }
+
+    private async void HandleMessage()
+    {
+        isShown = true;
+        await Task.Delay(5000);
+        isShown = false;
+        StateHasChanged();
     }
 }
+

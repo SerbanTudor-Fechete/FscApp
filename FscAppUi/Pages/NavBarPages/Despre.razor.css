@@ -1,0 +1,36 @@
+﻿#byellow {
+    background-color: var(--maincolor);
+}
+
+.despreformat {
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: black;
+}
+
+.minidisplayer {
+    display: flex;
+    align-items: center;
+}
+
+.comentsformat{
+    border: solid;
+    border-color: white;
+    border-width: 2px;
+}
+
+.fa-star {
+    font-size: 1.8rem;
+}
+
+.color {
+    color: var(--maincolor);
+}
+
+.noncolor {
+    color: var(--greycolor);
+}
+
+img {
+    width: 100%;
+}

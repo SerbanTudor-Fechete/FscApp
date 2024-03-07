@@ -12,47 +12,18 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace FscAppLibrary.Migrations
 {
     [DbContext(typeof(DataBaseContext))]
-    [Migration("20230914120305_Service")]
-    partial class Service
+    [Migration("20231224143648_Add-Migration InitialDb")]
+    partial class AddMigrationInitialDb
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "7.0.10")
+                .HasAnnotation("ProductVersion", "7.0.13")
                 .HasAnnotation("Relational:MaxIdentifierLength", 128);
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
-
-            modelBuilder.Entity("FscAppLibrary.Models.ComentariuModel", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
-
-                    b.Property<DateTime>("ComentariuDateTime")
-                        .HasColumnType("datetime2");
-
-                    b.Property<string>("ComentariuDescription")
-                        .IsRequired()
-                        .HasMaxLength(1000)
-                        .HasColumnType("varchar(1000)");
-
-                    b.Property<string>("ComentariuName")
-                        .IsRequired()
-                        .HasMaxLength(50)
-                        .HasColumnType("varchar(50)");
-
-                    b.Property<int>("ComentariuVotes")
-                        .HasColumnType("int");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("Comentarii");
-                });
 
             modelBuilder.Entity("FscAppLibrary.Models.FormularDeContactModel", b =>
                 {
@@ -109,8 +80,8 @@ namespace FscAppLibrary.Migrations
                         .HasMaxLength(50)
                         .HasColumnType("varchar(50)");
 
-                    b.Property<int>("ProgramarePersons")
-                        .HasColumnType("int");
+                    b.Property<string>("ProgramarePersons")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("ProgramarePhone")
                         .IsRequired()
@@ -119,8 +90,8 @@ namespace FscAppLibrary.Migrations
                     b.Property<string>("ProgramareService")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("ProgramareTimp")
-                        .HasColumnType("int");
+                    b.Property<string>("ProgramareTime")
+                        .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
 
@@ -134,12 +105,6 @@ namespace FscAppLibrary.Migrations
                         .HasColumnType("int");
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
-
-                    b.Property<int?>("ComentariuId")
-                        .HasColumnType("int");
-
-                    b.Property<int>("ReviewComents")
-                        .HasColumnType("int");
 
                     b.Property<DateTime>("ReviewDateTime")
                         .HasColumnType("datetime2");
@@ -157,23 +122,9 @@ namespace FscAppLibrary.Migrations
                     b.Property<double>("ReviewRate")
                         .HasColumnType("float");
 
-                    b.Property<int>("ReviewVotes")
-                        .HasColumnType("int");
-
                     b.HasKey("Id");
 
-                    b.HasIndex("ComentariuId");
-
                     b.ToTable("Reviews");
-                });
-
-            modelBuilder.Entity("FscAppLibrary.Models.ReviewModel", b =>
-                {
-                    b.HasOne("FscAppLibrary.Models.ComentariuModel", "Comentariu")
-                        .WithMany()
-                        .HasForeignKey("ComentariuId");
-
-                    b.Navigation("Comentariu");
                 });
 #pragma warning restore 612, 618
         }

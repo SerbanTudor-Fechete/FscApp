@@ -1,0 +1,145 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\serba\\Documents\\C#\\FscApp\\FscAppUi\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\FscAppUi.bundle.scp.css",
+      "PackagePath": "staticwebassets\\FscAppUi.3aw09zhh50.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\Users\\serba\\Documents\\C#\\FscApp\\FscAppUi\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\serba\\Documents\\C#\\FscApp\\FscAppUi\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\serba\\Documents\\C#\\FscApp\\FscAppUi\\wwwroot\\css\\material-dark.css",
+      "PackagePath": "staticwebassets\\css\\material-dark.css"
+    },
+    {
+      "Id": "C:\\Users\\serba\\Documents\\C#\\FscApp\\FscAppUi\\wwwroot\\css\\open-iconic\\FONT-LICENSE",
+      "PackagePath": "staticwebassets\\css\\open-iconic"
+    },
+    {
+      "Id": "C:\\Users\\serba\\Documents\\C#\\FscApp\\FscAppUi\\wwwroot\\css\\open-iconic\\ICON-LICENSE",
+      "PackagePath": "staticwebassets\\css\\open-iconic"
+    },
+    {
+      "Id": "C:\\Users\\serba\\Documents\\C#\\FscApp\\FscAppUi\\wwwroot\\css\\open-iconic\\README.md",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\README.md"
+    },
+    {
+      "Id": "C:\\Users\\serba\\Documents\\C#\\FscApp\\FscAppUi\\wwwroot\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\serba\\Documents\\C#\\FscApp\\FscAppUi\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.eot",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\font\\fonts\\open-iconic.eot"
+    },
+    {
+      "Id": "C:\\Users\\serba\\Documents\\C#\\FscApp\\FscAppUi\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.otf",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\font\\fonts\\open-iconic.otf"
+    },
+    {
+      "Id": "C:\\Users\\serba\\Documents\\C#\\FscApp\\FscAppUi\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.svg",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\font\\fonts\\open-iconic.svg"
+    },
+    {
+      "Id": "C:\\Users\\serba\\Documents\\C#\\FscApp\\FscAppUi\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.ttf",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\font\\fonts\\open-iconic.ttf"
+    },
+    {
+      "Id": "C:\\Users\\serba\\Documents\\C#\\FscApp\\FscAppUi\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.woff",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\font\\fonts\\open-iconic.woff"
+    },
+    {
+      "Id": "C:\\Users\\serba\\Documents\\C#\\FscApp\\FscAppUi\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "C:\\Users\\serba\\Documents\\C#\\FscApp\\FscAppUi\\wwwroot\\images\\Acasa2.jpg",
+      "PackagePath": "staticwebassets\\images\\Acasa2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\serba\\Documents\\C#\\FscApp\\FscAppUi\\wwwroot\\images\\Acasa3.jpg",
+      "PackagePath": "staticwebassets\\images\\Acasa3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\serba\\Documents\\C#\\FscApp\\FscAppUi\\wwwroot\\images\\Acasa4.jpg",
+      "PackagePath": "staticwebassets\\images\\Acasa4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\serba\\Documents\\C#\\FscApp\\FscAppUi\\wwwroot\\images\\Acasa5.jpg",
+      "PackagePath": "staticwebassets\\images\\Acasa5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\serba\\Documents\\C#\\FscApp\\FscAppUi\\wwwroot\\images\\Background.jpg",
+      "PackagePath": "staticwebassets\\images\\Background.jpg"
+    },
+    {
+      "Id": "C:\\Users\\serba\\Documents\\C#\\FscApp\\FscAppUi\\wwwroot\\images\\Background1.jpg",
+      "PackagePath": "staticwebassets\\images\\Background1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\serba\\Documents\\C#\\FscApp\\FscAppUi\\wwwroot\\images\\Despre.jpg",
+      "PackagePath": "staticwebassets\\images\\Despre.jpg"
+    },
+    {
+      "Id": "C:\\Users\\serba\\Documents\\C#\\FscApp\\FscAppUi\\wwwroot\\images\\Footer.jpg",
+      "PackagePath": "staticwebassets\\images\\Footer.jpg"
+    },
+    {
+      "Id": "C:\\Users\\serba\\Documents\\C#\\FscApp\\FscAppUi\\wwwroot\\images\\Logo.jpg",
+      "PackagePath": "staticwebassets\\images\\Logo.jpg"
+    },
+    {
+      "Id": "C:\\Users\\serba\\Documents\\C#\\FscApp\\FscAppUi\\wwwroot\\images\\Media\\Media1.mp4",
+      "PackagePath": "staticwebassets\\images\\Media\\Media1.mp4"
+    },
+    {
+      "Id": "C:\\Users\\serba\\Documents\\C#\\FscApp\\FscAppUi\\wwwroot\\images\\Media\\Media3.jpg",
+      "PackagePath": "staticwebassets\\images\\Media\\Media3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\serba\\Documents\\C#\\FscApp\\FscAppUi\\wwwroot\\images\\Media\\Media4.jpg",
+      "PackagePath": "staticwebassets\\images\\Media\\Media4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\serba\\Documents\\C#\\FscApp\\FscAppUi\\wwwroot\\images\\Media\\Media5.jpg",
+      "PackagePath": "staticwebassets\\images\\Media\\Media5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\serba\\Documents\\C#\\FscApp\\FscAppUi\\wwwroot\\images\\Media\\Media6.jpg",
+      "PackagePath": "staticwebassets\\images\\Media\\Media6.jpg"
+    },
+    {
+      "Id": "C:\\Users\\serba\\Documents\\C#\\FscApp\\FscAppUi\\wwwroot\\images\\Media\\Media7.jpg",
+      "PackagePath": "staticwebassets\\images\\Media\\Media7.jpg"
+    },
+    {
+      "Id": "C:\\Users\\serba\\Documents\\C#\\FscApp\\FscAppUi\\wwwroot\\images\\Media\\Media8.jpg",
+      "PackagePath": "staticwebassets\\images\\Media\\Media8.jpg"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.FscAppUi.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.FscAppUi.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.build.FscAppUi.props",
+      "PackagePath": "build\\FscAppUi.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildMultiTargeting.FscAppUi.props",
+      "PackagePath": "buildMultiTargeting\\FscAppUi.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildTransitive.FscAppUi.props",
+      "PackagePath": "buildTransitive\\FscAppUi.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

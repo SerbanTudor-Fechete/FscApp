@@ -1,0 +1,59 @@
+#b0[b-vxq58hk9fd] {
+    background-image: url(/images/Footer.jpg);
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+}
+
+#b1[b-vxq58hk9fd] {
+    background: linear-gradient(90deg, var(--maincolor) 30%, var(--backgreycolor) 30%);
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.logo[b-vxq58hk9fd] {
+    width: 10rem;
+    height: auto;
+    box-shadow: 0.3rem 0.3rem 0.9rem black, -0.3rem -0.3rem 0.9rem black;
+}
+
+.social[b-vxq58hk9fd] {
+    font-size: 1.25rem;
+}
+
+.iconformat[b-vxq58hk9fd] {
+    color: var(--maincolor);
+    font-size: 1.6rem;
+}
+
+.fa-bullseye[b-vxq58hk9fd] {
+    color: var(--maincolor);
+    font-size: 1.25rem;
+}
+
+    .fa-bullseye:hover + .textformat[b-vxq58hk9fd] {
+    color: white;
+    transition-duration: 0.4s;
+    }
+
+.contactformat[b-vxq58hk9fd] {
+    color: var(--maincolor);
+    font-size: 1.38rem;
+    font-weight: 500;
+    padding-left: 0.7rem;
+}
+
+.textformat[b-vxq58hk9fd] {
+    color: var(--blackcolor);
+    font-size: 1.25rem;
+    font-weight: 400;
+    padding-left: 0.5rem;
+    transition-duration: 0.4s;
+}
+
+    .textformat:hover[b-vxq58hk9fd] {
+        color: white;
+    }
+
+.mentionsformat[b-vxq58hk9fd] {
+    margin-top: 0.7rem;
+}

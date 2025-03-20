@@ -1,0 +1,172 @@
+﻿@page "/Programare"
+@inject ProgramareOnlineDbService programareDbService;
+@inject DataBaseContext Context;
+
+<div id="bmain" class="row background">
+    <div class="displayer titleformat mb-3 animation">
+        PROGRAMARE
+    </div>
+    <div class="displayer undertitleformat animation">
+        FĂ-ȚI O REZERVARE DOAR PENTRU TINE 
+    </div>
+</div>
+
+<div id="bbackgreycolor" class="row background pt-5 pb-4">
+    <div id="form" class="displayer undertitleformat">
+        FORMULAR DE PROGRAMARE
+    </div>
+    <div class="displayer titleformat mt-3">
+        ALEGE CÂND SĂ VII LA NOI
+    </div>
+    <div class="displayer minititleformat pt-3">
+        ----------
+    </div>
+</div>
+
+<div id="bbackgreycolor" class="background text-center pt-3 pb-5">
+<EditForm Model=@programare OnValidSubmit="HandleSubmitProgramare">
+    <DataAnnotationsValidator/>
+        <div class="row justify-content-center">
+            <div class="col-3">     
+                <SfDatePicker TValue="DateTime" Min="@serviciiProperty.MinDate" Max="serviciiProperty.MaxDate" @bind-Value="dateOnly" >
+                    <DatePickerEvents TValue="DateTime" ValueChange="CalendarHandler"></DatePickerEvents>
+                </SfDatePicker>
+            </div>
+        </div>
+        <br />
+        <div class="displayer">
+                 <InputSelect class="inputbox me-3" @bind-Value="programare.ProgramareTime"> 
+                        <option value="">Alege numărul de minute ...</option>
+                        @foreach (var timp in serviciiProperty.timp)
+                        {
+                        <option value="@timp">@timp</option>
+                        }
+                 </InputSelect>
+                 <InputSelect class="inputbox ms-3" @bind-Value="timeOnly">
+                        <option value="00:00">Alege ora la care să vii ...</option>
+                        @foreach(var ora in dateTimes)
+                        {
+                        <option value="@ora">@ora</option>
+                        }
+                </InputSelect>
+        </div>
+        <div class="displayer">
+                <InputSelect class="inputbox me-3" @bind-Value="programare.ProgramareService">
+                        <option value="">Alege serviciul ...</option>
+                        @foreach (var servicii in serviciiProperty.servicii)
+                        {
+                        <option value="@servicii">@servicii</option>
+                        }
+                </InputSelect>
+                <InputSelect class="inputbox ms-3" @bind-Value="programare.ProgramarePersons">
+                        <option value="">Alege numărul de persoane ...</option>
+                        @foreach (var persoane in serviciiProperty.persoane)
+                        {
+                        <option value="@persoane">@persoane</option>
+                        }
+                </InputSelect>
+        </div>
+        <InputText class="inputbox" placeholder="Nume" @bind-Value="@programare.ProgramareName"></InputText>
+    <ValidationMessage For=@(() => programare.ProgramareName) />
+        <br />
+        <InputText class="inputbox" placeholder="Email" @bind-Value="@programare.ProgramareEmail"></InputText>
+    <ValidationMessage For=@(() => programare.ProgramareEmail)/>
+        <br />
+        <InputText class="inputbox" placeholder="Telefon" @bind-Value="@programare.ProgramarePhone"></InputText>
+    <ValidationMessage For=@(() => programare.ProgramarePhone)/>
+        <br />
+        <InputTextArea class="inputbox inputboxm" placeholder="Mesaj" @bind-Value="@programare.ProgramareDescription"></InputTextArea>
+    <ValidationMessage For=@(() => programare.ProgramareDescription) />
+        <br />
+        <button class="buttonformat mt-4" type="submit">Trimite</button>
+</EditForm>
+</div>
+
+@if (isShown == true)
+{
+    <div class="messageformat">
+        Mulțumim pentru că ați făcut o programare! Vă așteptăm la noi!
+    </div>
+}
+
+@code {
+    private ServiciiProperty serviciiProperty = new();
+    private ProgramareOnlineModel programare = new();
+    private bool isShown = false;
+    private TimeOnly timeOnly;
+    private DateTime dateOnly = DateTime.Now.AddDays(1);
+
+    private List<DateTime> programari = new();
+    private List<TimeOnly> sameTime = new();
+    private List<TimeOnly> dateTimes = new()
+    {
+        new TimeOnly(16,00),
+        new TimeOnly(17,00),
+        new TimeOnly(18,00),
+        new TimeOnly(19,00),
+        new TimeOnly(20,00)
+    };
+
+
+    private void HandleSubmitProgramare(EditContext editContext)
+    {   
+        programare.ProgramareDateTime = dateOnly.Date.Add(timeOnly.ToTimeSpan());
+        var newProgramare = (ProgramareOnlineModel)editContext.Model;
+        programareDbService.AddProgramare(newProgramare);
+        RefreshForm();
+        HandleMessage();
+    }
+
+    private void RefreshForm()
+    {
+        programare = new ProgramareOnlineModel();
+        dateOnly = DateTime.Now.AddDays(1);
+        timeOnly = new TimeOnly(00,00);
+    }
+
+    private async void HandleMessage()
+    {
+        isShown = true;
+        await Task.Delay(5000);
+        isShown = false;
+        StateHasChanged();
+    }
+
+    protected override void OnInitialized()
+    {   
+        programari.Clear();
+        foreach (var time in sameTime)
+        {
+            dateTimes.Remove(time);
+        }
+        foreach (var prog in Context.Programari)
+        {
+            programari.Add(prog.ProgramareDateTime);
+        }
+        sameTime.Clear();
+    }
+
+    private void CalendarHandler()
+    {   
+
+        foreach (var prog in programari)
+        {      
+            if(dateOnly.Date == prog.Date)
+            {   
+                sameTime.Add(TimeOnly.FromDateTime(prog));
+            }
+            else
+            {
+                dateTimes = new List<TimeOnly>
+                {
+                    new TimeOnly(16,00),
+                    new TimeOnly(17,00),
+                    new TimeOnly(18,00),
+                    new TimeOnly(19,00),
+                    new TimeOnly(20,00)
+                };
+            }
+        }
+        OnInitialized();
+    }
+}

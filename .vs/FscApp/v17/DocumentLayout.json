@@ -1,0 +1,474 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\serba\\Documents\\C#\\FscApp\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{11390E25-76C9-4AA4-840C-237440A85D9F}|FscAppUi\\FscAppUi.csproj|c:\\users\\serba\\documents\\c#\\fscapp\\fscappui\\registerservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{11390E25-76C9-4AA4-840C-237440A85D9F}|FscAppUi\\FscAppUi.csproj|solutionrelative:fscappui\\registerservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{11390E25-76C9-4AA4-840C-237440A85D9F}|FscAppUi\\FscAppUi.csproj|c:\\users\\serba\\documents\\c#\\fscapp\\fscappui\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{11390E25-76C9-4AA4-840C-237440A85D9F}|FscAppUi\\FscAppUi.csproj|solutionrelative:fscappui\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{11390E25-76C9-4AA4-840C-237440A85D9F}|FscAppUi\\FscAppUi.csproj|c:\\users\\serba\\documents\\c#\\fscapp\\fscappui\\globalusings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{11390E25-76C9-4AA4-840C-237440A85D9F}|FscAppUi\\FscAppUi.csproj|solutionrelative:fscappui\\globalusings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{11390E25-76C9-4AA4-840C-237440A85D9F}|FscAppUi\\FscAppUi.csproj|c:\\users\\serba\\documents\\c#\\fscapp\\fscappui\\app.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{11390E25-76C9-4AA4-840C-237440A85D9F}|FscAppUi\\FscAppUi.csproj|solutionrelative:fscappui\\app.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{11390E25-76C9-4AA4-840C-237440A85D9F}|FscAppUi\\FscAppUi.csproj|c:\\users\\serba\\documents\\c#\\fscapp\\fscappui\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{11390E25-76C9-4AA4-840C-237440A85D9F}|FscAppUi\\FscAppUi.csproj|solutionrelative:fscappui\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{11390E25-76C9-4AA4-840C-237440A85D9F}|FscAppUi\\FscAppUi.csproj|c:\\users\\serba\\documents\\c#\\fscapp\\fscappui\\shared\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{11390E25-76C9-4AA4-840C-237440A85D9F}|FscAppUi\\FscAppUi.csproj|solutionrelative:fscappui\\shared\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{11390E25-76C9-4AA4-840C-237440A85D9F}|FscAppUi\\FscAppUi.csproj|c:\\users\\serba\\documents\\c#\\fscapp\\fscappui\\shared\\footermenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{11390E25-76C9-4AA4-840C-237440A85D9F}|FscAppUi\\FscAppUi.csproj|solutionrelative:fscappui\\shared\\footermenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{11390E25-76C9-4AA4-840C-237440A85D9F}|FscAppUi\\FscAppUi.csproj|c:\\users\\serba\\documents\\c#\\fscapp\\fscappui\\pages\\navbarpages\\programare.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{11390E25-76C9-4AA4-840C-237440A85D9F}|FscAppUi\\FscAppUi.csproj|solutionrelative:fscappui\\pages\\navbarpages\\programare.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{11390E25-76C9-4AA4-840C-237440A85D9F}|FscAppUi\\FscAppUi.csproj|c:\\users\\serba\\documents\\c#\\fscapp\\fscappui\\pages\\navbarpages\\servicii.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{11390E25-76C9-4AA4-840C-237440A85D9F}|FscAppUi\\FscAppUi.csproj|solutionrelative:fscappui\\pages\\navbarpages\\servicii.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{11390E25-76C9-4AA4-840C-237440A85D9F}|FscAppUi\\FscAppUi.csproj|c:\\users\\serba\\documents\\c#\\fscapp\\fscappui\\pages\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{11390E25-76C9-4AA4-840C-237440A85D9F}|FscAppUi\\FscAppUi.csproj|solutionrelative:fscappui\\pages\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{11390E25-76C9-4AA4-840C-237440A85D9F}|FscAppUi\\FscAppUi.csproj|c:\\users\\serba\\documents\\c#\\fscapp\\fscappui\\pages\\_host.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{11390E25-76C9-4AA4-840C-237440A85D9F}|FscAppUi\\FscAppUi.csproj|solutionrelative:fscappui\\pages\\_host.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{11390E25-76C9-4AA4-840C-237440A85D9F}|FscAppUi\\FscAppUi.csproj|c:\\users\\serba\\documents\\c#\\fscapp\\fscappui\\pages\\navbarpages\\media.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{11390E25-76C9-4AA4-840C-237440A85D9F}|FscAppUi\\FscAppUi.csproj|solutionrelative:fscappui\\pages\\navbarpages\\media.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{11390E25-76C9-4AA4-840C-237440A85D9F}|FscAppUi\\FscAppUi.csproj|c:\\users\\serba\\documents\\c#\\fscapp\\fscappui\\pages\\navbarpages\\contact.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{11390E25-76C9-4AA4-840C-237440A85D9F}|FscAppUi\\FscAppUi.csproj|solutionrelative:fscappui\\pages\\navbarpages\\contact.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{11390E25-76C9-4AA4-840C-237440A85D9F}|FscAppUi\\FscAppUi.csproj|c:\\users\\serba\\documents\\c#\\fscapp\\fscappui\\pages\\navbarpages\\acasa.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{11390E25-76C9-4AA4-840C-237440A85D9F}|FscAppUi\\FscAppUi.csproj|solutionrelative:fscappui\\pages\\navbarpages\\acasa.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{711D1DF1-5F33-4761-93EC-D3636DAD7FF3}|FscAppLibrary\\FscAppLibrary.csproj|c:\\users\\serba\\documents\\c#\\fscapp\\fscapplibrary\\services\\formulardecontactdbservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{711D1DF1-5F33-4761-93EC-D3636DAD7FF3}|FscAppLibrary\\FscAppLibrary.csproj|solutionrelative:fscapplibrary\\services\\formulardecontactdbservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{711D1DF1-5F33-4761-93EC-D3636DAD7FF3}|FscAppLibrary\\FscAppLibrary.csproj|c:\\users\\serba\\documents\\c#\\fscapp\\fscapplibrary\\services\\maindbservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{711D1DF1-5F33-4761-93EC-D3636DAD7FF3}|FscAppLibrary\\FscAppLibrary.csproj|solutionrelative:fscapplibrary\\services\\maindbservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{711D1DF1-5F33-4761-93EC-D3636DAD7FF3}|FscAppLibrary\\FscAppLibrary.csproj|c:\\users\\serba\\documents\\c#\\fscapp\\fscapplibrary\\services\\programareonlinedbservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{711D1DF1-5F33-4761-93EC-D3636DAD7FF3}|FscAppLibrary\\FscAppLibrary.csproj|solutionrelative:fscapplibrary\\services\\programareonlinedbservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{711D1DF1-5F33-4761-93EC-D3636DAD7FF3}|FscAppLibrary\\FscAppLibrary.csproj|c:\\users\\serba\\documents\\c#\\fscapp\\fscapplibrary\\globalusings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{711D1DF1-5F33-4761-93EC-D3636DAD7FF3}|FscAppLibrary\\FscAppLibrary.csproj|solutionrelative:fscapplibrary\\globalusings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{711D1DF1-5F33-4761-93EC-D3636DAD7FF3}|FscAppLibrary\\FscAppLibrary.csproj|c:\\users\\serba\\documents\\c#\\fscapp\\fscapplibrary\\services\\reviewdbservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{711D1DF1-5F33-4761-93EC-D3636DAD7FF3}|FscAppLibrary\\FscAppLibrary.csproj|solutionrelative:fscapplibrary\\services\\reviewdbservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{711D1DF1-5F33-4761-93EC-D3636DAD7FF3}|FscAppLibrary\\FscAppLibrary.csproj|c:\\users\\serba\\documents\\c#\\fscapp\\fscapplibrary\\dataaccess\\databasecontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{711D1DF1-5F33-4761-93EC-D3636DAD7FF3}|FscAppLibrary\\FscAppLibrary.csproj|solutionrelative:fscapplibrary\\dataaccess\\databasecontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{711D1DF1-5F33-4761-93EC-D3636DAD7FF3}|FscAppLibrary\\FscAppLibrary.csproj|c:\\users\\serba\\documents\\c#\\fscapp\\fscapplibrary\\migrations\\databasecontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{711D1DF1-5F33-4761-93EC-D3636DAD7FF3}|FscAppLibrary\\FscAppLibrary.csproj|solutionrelative:fscapplibrary\\migrations\\databasecontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{711D1DF1-5F33-4761-93EC-D3636DAD7FF3}|FscAppLibrary\\FscAppLibrary.csproj|c:\\users\\serba\\documents\\c#\\fscapp\\fscapplibrary\\migrations\\20231224143648_add-migration initialdb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{711D1DF1-5F33-4761-93EC-D3636DAD7FF3}|FscAppLibrary\\FscAppLibrary.csproj|solutionrelative:fscapplibrary\\migrations\\20231224143648_add-migration initialdb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{711D1DF1-5F33-4761-93EC-D3636DAD7FF3}|FscAppLibrary\\FscAppLibrary.csproj|c:\\users\\serba\\documents\\c#\\fscapp\\fscapplibrary\\models\\properties\\serviciiproperty.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{711D1DF1-5F33-4761-93EC-D3636DAD7FF3}|FscAppLibrary\\FscAppLibrary.csproj|solutionrelative:fscapplibrary\\models\\properties\\serviciiproperty.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{711D1DF1-5F33-4761-93EC-D3636DAD7FF3}|FscAppLibrary\\FscAppLibrary.csproj|c:\\users\\serba\\documents\\c#\\fscapp\\fscapplibrary\\models\\formulardecontactmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{711D1DF1-5F33-4761-93EC-D3636DAD7FF3}|FscAppLibrary\\FscAppLibrary.csproj|solutionrelative:fscapplibrary\\models\\formulardecontactmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{711D1DF1-5F33-4761-93EC-D3636DAD7FF3}|FscAppLibrary\\FscAppLibrary.csproj|c:\\users\\serba\\documents\\c#\\fscapp\\fscapplibrary\\models\\reviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{711D1DF1-5F33-4761-93EC-D3636DAD7FF3}|FscAppLibrary\\FscAppLibrary.csproj|solutionrelative:fscapplibrary\\models\\reviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{711D1DF1-5F33-4761-93EC-D3636DAD7FF3}|FscAppLibrary\\FscAppLibrary.csproj|c:\\users\\serba\\documents\\c#\\fscapp\\fscapplibrary\\models\\programareonlinemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{711D1DF1-5F33-4761-93EC-D3636DAD7FF3}|FscAppLibrary\\FscAppLibrary.csproj|solutionrelative:fscapplibrary\\models\\programareonlinemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 16,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:39977236:0:{83107a3e-496a-485e-b455-16ddb978e55e}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "GlobalUsings.cs",
+              "DocumentMoniker": "C:\\Users\\serba\\Documents\\C#\\FscApp\\FscAppUi\\GlobalUsings.cs",
+              "RelativeDocumentMoniker": "FscAppUi\\GlobalUsings.cs",
+              "ToolTip": "C:\\Users\\serba\\Documents\\C#\\FscApp\\FscAppUi\\GlobalUsings.cs",
+              "RelativeToolTip": "FscAppUi\\GlobalUsings.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-20T16:27:34.219Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "App.razor",
+              "DocumentMoniker": "C:\\Users\\serba\\Documents\\C#\\FscApp\\FscAppUi\\App.razor",
+              "RelativeDocumentMoniker": "FscAppUi\\App.razor",
+              "ToolTip": "C:\\Users\\serba\\Documents\\C#\\FscApp\\FscAppUi\\App.razor",
+              "RelativeToolTip": "FscAppUi\\App.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-20T16:27:31.725Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "_Imports.razor",
+              "DocumentMoniker": "C:\\Users\\serba\\Documents\\C#\\FscApp\\FscAppUi\\_Imports.razor",
+              "RelativeDocumentMoniker": "FscAppUi\\_Imports.razor",
+              "ToolTip": "C:\\Users\\serba\\Documents\\C#\\FscApp\\FscAppUi\\_Imports.razor",
+              "RelativeToolTip": "FscAppUi\\_Imports.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-20T16:27:30.178Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "_Host.cshtml",
+              "DocumentMoniker": "C:\\Users\\serba\\Documents\\C#\\FscApp\\FscAppUi\\Pages\\_Host.cshtml",
+              "RelativeDocumentMoniker": "FscAppUi\\Pages\\_Host.cshtml",
+              "ToolTip": "C:\\Users\\serba\\Documents\\C#\\FscApp\\FscAppUi\\Pages\\_Host.cshtml",
+              "RelativeToolTip": "FscAppUi\\Pages\\_Host.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-20T16:27:05.543Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Error.cshtml",
+              "DocumentMoniker": "C:\\Users\\serba\\Documents\\C#\\FscApp\\FscAppUi\\Pages\\Error.cshtml",
+              "RelativeDocumentMoniker": "FscAppUi\\Pages\\Error.cshtml",
+              "ToolTip": "C:\\Users\\serba\\Documents\\C#\\FscApp\\FscAppUi\\Pages\\Error.cshtml",
+              "RelativeToolTip": "FscAppUi\\Pages\\Error.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-20T16:27:04.956Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Servicii.razor",
+              "DocumentMoniker": "C:\\Users\\serba\\Documents\\C#\\FscApp\\FscAppUi\\Pages\\NavBarPages\\Servicii.razor",
+              "RelativeDocumentMoniker": "FscAppUi\\Pages\\NavBarPages\\Servicii.razor",
+              "ToolTip": "C:\\Users\\serba\\Documents\\C#\\FscApp\\FscAppUi\\Pages\\NavBarPages\\Servicii.razor",
+              "RelativeToolTip": "FscAppUi\\Pages\\NavBarPages\\Servicii.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-20T16:27:03.403Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Programare.razor",
+              "DocumentMoniker": "C:\\Users\\serba\\Documents\\C#\\FscApp\\FscAppUi\\Pages\\NavBarPages\\Programare.razor",
+              "RelativeDocumentMoniker": "FscAppUi\\Pages\\NavBarPages\\Programare.razor",
+              "ToolTip": "C:\\Users\\serba\\Documents\\C#\\FscApp\\FscAppUi\\Pages\\NavBarPages\\Programare.razor",
+              "RelativeToolTip": "FscAppUi\\Pages\\NavBarPages\\Programare.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-20T16:27:02.804Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Media.razor",
+              "DocumentMoniker": "C:\\Users\\serba\\Documents\\C#\\FscApp\\FscAppUi\\Pages\\NavBarPages\\Media.razor",
+              "RelativeDocumentMoniker": "FscAppUi\\Pages\\NavBarPages\\Media.razor",
+              "ToolTip": "C:\\Users\\serba\\Documents\\C#\\FscApp\\FscAppUi\\Pages\\NavBarPages\\Media.razor",
+              "RelativeToolTip": "FscAppUi\\Pages\\NavBarPages\\Media.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-20T16:27:02.281Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "GlobalUsings.cs",
+              "DocumentMoniker": "C:\\Users\\serba\\Documents\\C#\\FscApp\\FscAppLibrary\\GlobalUsings.cs",
+              "RelativeDocumentMoniker": "FscAppLibrary\\GlobalUsings.cs",
+              "ToolTip": "C:\\Users\\serba\\Documents\\C#\\FscApp\\FscAppLibrary\\GlobalUsings.cs",
+              "RelativeToolTip": "FscAppLibrary\\GlobalUsings.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-20T16:26:41.964Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "ReviewDbService.cs",
+              "DocumentMoniker": "C:\\Users\\serba\\Documents\\C#\\FscApp\\FscAppLibrary\\Services\\ReviewDbService.cs",
+              "RelativeDocumentMoniker": "FscAppLibrary\\Services\\ReviewDbService.cs",
+              "ToolTip": "C:\\Users\\serba\\Documents\\C#\\FscApp\\FscAppLibrary\\Services\\ReviewDbService.cs",
+              "RelativeToolTip": "FscAppLibrary\\Services\\ReviewDbService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-20T16:26:40.23Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "ProgramareOnlineDbService.cs",
+              "DocumentMoniker": "C:\\Users\\serba\\Documents\\C#\\FscApp\\FscAppLibrary\\Services\\ProgramareOnlineDbService.cs",
+              "RelativeDocumentMoniker": "FscAppLibrary\\Services\\ProgramareOnlineDbService.cs",
+              "ToolTip": "C:\\Users\\serba\\Documents\\C#\\FscApp\\FscAppLibrary\\Services\\ProgramareOnlineDbService.cs",
+              "RelativeToolTip": "FscAppLibrary\\Services\\ProgramareOnlineDbService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-20T16:26:38.167Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "MainDbService.cs",
+              "DocumentMoniker": "C:\\Users\\serba\\Documents\\C#\\FscApp\\FscAppLibrary\\Services\\MainDbService.cs",
+              "RelativeDocumentMoniker": "FscAppLibrary\\Services\\MainDbService.cs",
+              "ToolTip": "C:\\Users\\serba\\Documents\\C#\\FscApp\\FscAppLibrary\\Services\\MainDbService.cs",
+              "RelativeToolTip": "FscAppLibrary\\Services\\MainDbService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-20T16:26:36.623Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\serba\\Documents\\C#\\FscApp\\FscAppUi\\Program.cs",
+              "RelativeDocumentMoniker": "FscAppUi\\Program.cs",
+              "ToolTip": "C:\\Users\\serba\\Documents\\C#\\FscApp\\FscAppUi\\Program.cs",
+              "RelativeToolTip": "FscAppUi\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-20T09:49:42.124Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "RegisterServices.cs",
+              "DocumentMoniker": "C:\\Users\\serba\\Documents\\C#\\FscApp\\FscAppUi\\RegisterServices.cs",
+              "RelativeDocumentMoniker": "FscAppUi\\RegisterServices.cs",
+              "ToolTip": "C:\\Users\\serba\\Documents\\C#\\FscApp\\FscAppUi\\RegisterServices.cs",
+              "RelativeToolTip": "FscAppUi\\RegisterServices.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABQAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-20T09:49:40.768Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "DataBaseContextModelSnapshot.cs",
+              "DocumentMoniker": "C:\\Users\\serba\\Documents\\C#\\FscApp\\FscAppLibrary\\Migrations\\DataBaseContextModelSnapshot.cs",
+              "RelativeDocumentMoniker": "FscAppLibrary\\Migrations\\DataBaseContextModelSnapshot.cs",
+              "ToolTip": "C:\\Users\\serba\\Documents\\C#\\FscApp\\FscAppLibrary\\Migrations\\DataBaseContextModelSnapshot.cs",
+              "RelativeToolTip": "FscAppLibrary\\Migrations\\DataBaseContextModelSnapshot.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-20T16:26:49.574Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "FormularDeContactModel.cs",
+              "DocumentMoniker": "C:\\Users\\serba\\Documents\\C#\\FscApp\\FscAppLibrary\\Models\\FormularDeContactModel.cs",
+              "RelativeDocumentMoniker": "FscAppLibrary\\Models\\FormularDeContactModel.cs",
+              "ToolTip": "C:\\Users\\serba\\Documents\\C#\\FscApp\\FscAppLibrary\\Models\\FormularDeContactModel.cs",
+              "RelativeToolTip": "FscAppLibrary\\Models\\FormularDeContactModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-20T16:26:05.578Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "FooterMenu.razor",
+              "DocumentMoniker": "C:\\Users\\serba\\Documents\\C#\\FscApp\\FscAppUi\\Shared\\FooterMenu.razor",
+              "RelativeDocumentMoniker": "FscAppUi\\Shared\\FooterMenu.razor",
+              "ToolTip": "C:\\Users\\serba\\Documents\\C#\\FscApp\\FscAppUi\\Shared\\FooterMenu.razor",
+              "RelativeToolTip": "FscAppUi\\Shared\\FooterMenu.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEkAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-20T16:12:43.201Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "NavMenu.razor",
+              "DocumentMoniker": "C:\\Users\\serba\\Documents\\C#\\FscApp\\FscAppUi\\Shared\\NavMenu.razor",
+              "RelativeDocumentMoniker": "FscAppUi\\Shared\\NavMenu.razor",
+              "ToolTip": "C:\\Users\\serba\\Documents\\C#\\FscApp\\FscAppUi\\Shared\\NavMenu.razor",
+              "RelativeToolTip": "FscAppUi\\Shared\\NavMenu.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-20T16:12:41.73Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "ReviewModel.cs",
+              "DocumentMoniker": "C:\\Users\\serba\\Documents\\C#\\FscApp\\FscAppLibrary\\Models\\ReviewModel.cs",
+              "RelativeDocumentMoniker": "FscAppLibrary\\Models\\ReviewModel.cs",
+              "ToolTip": "C:\\Users\\serba\\Documents\\C#\\FscApp\\FscAppLibrary\\Models\\ReviewModel.cs",
+              "RelativeToolTip": "FscAppLibrary\\Models\\ReviewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-20T16:26:08.367Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "20231224143648_Add-Migration InitialDb.cs",
+              "DocumentMoniker": "C:\\Users\\serba\\Documents\\C#\\FscApp\\FscAppLibrary\\Migrations\\20231224143648_Add-Migration InitialDb.cs",
+              "RelativeDocumentMoniker": "FscAppLibrary\\Migrations\\20231224143648_Add-Migration InitialDb.cs",
+              "ToolTip": "C:\\Users\\serba\\Documents\\C#\\FscApp\\FscAppLibrary\\Migrations\\20231224143648_Add-Migration InitialDb.cs",
+              "RelativeToolTip": "FscAppLibrary\\Migrations\\20231224143648_Add-Migration InitialDb.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-20T16:26:02.021Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "DataBaseContext.cs",
+              "DocumentMoniker": "C:\\Users\\serba\\Documents\\C#\\FscApp\\FscAppLibrary\\DataAccess\\DataBaseContext.cs",
+              "RelativeDocumentMoniker": "FscAppLibrary\\DataAccess\\DataBaseContext.cs",
+              "ToolTip": "C:\\Users\\serba\\Documents\\C#\\FscApp\\FscAppLibrary\\DataAccess\\DataBaseContext.cs",
+              "RelativeToolTip": "FscAppLibrary\\DataAccess\\DataBaseContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-20T08:37:48.304Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "FormularDeContactDbService.cs",
+              "DocumentMoniker": "C:\\Users\\serba\\Documents\\C#\\FscApp\\FscAppLibrary\\Services\\FormularDeContactDbService.cs",
+              "RelativeDocumentMoniker": "FscAppLibrary\\Services\\FormularDeContactDbService.cs",
+              "ToolTip": "C:\\Users\\serba\\Documents\\C#\\FscApp\\FscAppLibrary\\Services\\FormularDeContactDbService.cs",
+              "RelativeToolTip": "FscAppLibrary\\Services\\FormularDeContactDbService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-20T08:40:34.72Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Acasa.razor",
+              "DocumentMoniker": "C:\\Users\\serba\\Documents\\C#\\FscApp\\FscAppUi\\Pages\\NavBarPages\\Acasa.razor",
+              "RelativeDocumentMoniker": "FscAppUi\\Pages\\NavBarPages\\Acasa.razor",
+              "ToolTip": "C:\\Users\\serba\\Documents\\C#\\FscApp\\FscAppUi\\Pages\\NavBarPages\\Acasa.razor",
+              "RelativeToolTip": "FscAppUi\\Pages\\NavBarPages\\Acasa.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-20T11:12:43.517Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Contact.razor",
+              "DocumentMoniker": "C:\\Users\\serba\\Documents\\C#\\FscApp\\FscAppUi\\Pages\\NavBarPages\\Contact.razor",
+              "RelativeDocumentMoniker": "FscAppUi\\Pages\\NavBarPages\\Contact.razor",
+              "ToolTip": "C:\\Users\\serba\\Documents\\C#\\FscApp\\FscAppUi\\Pages\\NavBarPages\\Contact.razor",
+              "RelativeToolTip": "FscAppUi\\Pages\\NavBarPages\\Contact.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC0AAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-20T11:12:48.945Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "ProgramareOnlineModel.cs",
+              "DocumentMoniker": "C:\\Users\\serba\\Documents\\C#\\FscApp\\FscAppLibrary\\Models\\ProgramareOnlineModel.cs",
+              "RelativeDocumentMoniker": "FscAppLibrary\\Models\\ProgramareOnlineModel.cs",
+              "ToolTip": "C:\\Users\\serba\\Documents\\C#\\FscApp\\FscAppLibrary\\Models\\ProgramareOnlineModel.cs",
+              "RelativeToolTip": "FscAppLibrary\\Models\\ProgramareOnlineModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-20T16:26:07.363Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "ServiciiProperty.cs",
+              "DocumentMoniker": "C:\\Users\\serba\\Documents\\C#\\FscApp\\FscAppLibrary\\Models\\Properties\\ServiciiProperty.cs",
+              "RelativeDocumentMoniker": "FscAppLibrary\\Models\\Properties\\ServiciiProperty.cs",
+              "ToolTip": "C:\\Users\\serba\\Documents\\C#\\FscApp\\FscAppLibrary\\Models\\Properties\\ServiciiProperty.cs",
+              "RelativeToolTip": "FscAppLibrary\\Models\\Properties\\ServiciiProperty.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-20T08:40:01.776Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

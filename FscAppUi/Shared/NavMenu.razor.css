@@ -1,0 +1,34 @@
+﻿.background {
+    background: linear-gradient(90deg, rgba(0,0,0,1) 16%, var(--maincolor) 65%);
+}
+
+.logo {
+    width: 8rem;
+    height: auto;
+}
+
+.alignment{
+    display:flex;
+    align-items:center;
+    font-size: 1.25rem;
+    margin-left: 0.8rem;
+    margin-right: 0.8rem;
+}
+
+::deep .nav-link {
+    color: var(--blackcolor);
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+    ::deep .nav-link:hover {
+        color: black;
+    }
+
+    ::deep .nav-link-active {
+        color: black;
+    }
+
+
+
+

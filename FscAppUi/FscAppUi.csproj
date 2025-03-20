@@ -1,0 +1,45 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+	<PropertyGroup>
+		<TargetFramework>net7.0</TargetFramework>
+		<Nullable>enable</Nullable>
+		<UserSecretsId>6fd58830-7292-4196-bd2f-17f8b5a67831</UserSecretsId>
+	</PropertyGroup>
+
+	<ItemGroup>
+	  <None Remove="Pages\NavBarPages\Contact.razor.css" />
+	  <None Remove="Pages\NavBarPages\Despre.razor.css" />
+	  <None Remove="Pages\NavBarPages\Media.razor.css" />
+	  <None Remove="Shared\FooterMenu.razor.css" />
+	  <None Remove="Shared\NavMenu.razor.css" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Content Include="Pages\NavBarPages\Contact.razor.css" />
+	  <Content Include="Pages\NavBarPages\Despre.razor.css" />
+	  <Content Include="Pages\NavBarPages\Media.razor.css" />
+	  <Content Include="Shared\FooterMenu.razor.css" />
+	  <Content Include="Shared\NavMenu.razor.css" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<Folder Include="Components\" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="7.0.13">
+	    <PrivateAssets>all</PrivateAssets>
+	    <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+	  </PackageReference>
+	  <PackageReference Include="Syncfusion.Blazor.Calendars" Version="23.1.42" />
+	  <PackageReference Include="Syncfusion.Blazor.Core" Version="23.1.42" />
+	  <PackageReference Include="Syncfusion.Blazor.Navigations" Version="23.1.42" />
+	  <PackageReference Include="Syncfusion.Blazor.Themes" Version="23.1.42" />
+	  <PackageReference Include="Syncfusion.Licensing" Version="23.1.42" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\FscAppLibrary\FscAppLibrary.csproj" />
+	</ItemGroup>
+
+</Project>

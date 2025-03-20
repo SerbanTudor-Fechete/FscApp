@@ -1,0 +1,123 @@
+﻿@page "/Contact"
+@inject FormularDeContactDbService formularDbService;
+
+<div id="bmain" class="row background">
+    <div class="displayer titleformat mb-3 animation">
+        CONTACT
+    </div>
+    <div class="displayer undertitleformat animation">
+        AI O ÎNTREBARE? INTRĂ ÎN LEGĂTURĂ CU NOI!
+    </div>
+</div>
+<div id="bbackblackcolor" class="row background justify-content-center padding">
+    <div id="map">
+    </div>
+    <div id="bblack" class="col-3 background p-5 pt-0">
+        <div class="minititleformat mb-3">
+            <i class="fa fa-globe icon"></i>
+            ADRESA
+        </div>
+        <div class="pt-2 paragraphformat">
+            Cluj-Napoca
+            <br/>
+            Strada Cluj
+            <br />
+            Numărul 1
+        </div>
+    </div>
+    <div class="col-1">
+    </div>
+    <div id="bblack" class="col-3 background p-5 pt-0">
+        <div class="minititleformat mb-3">
+            <i class="fa fa-calendar icon"></i>
+            PROGRAM
+        </div>
+        <div class="pt-2 paragraphformat">
+            Luni-Vineri: 17.00 – 21.00
+            <br />
+            Sâmbătă: 10.00 – 18.00
+            <br />
+            Duminică: 14.00 – 19.00
+        </div>
+    </div>
+    <div class="col-1">
+    </div>
+    <div id="bblack" class="col-3 background p-5 pt-0">
+        <div class="minititleformat mb-3">
+            <i class="fa fa-phone icon"></i>
+            CONTACT
+        </div>
+        <div class="pt-2 paragraphformat">
+            Email: office@funshootingcenter.ro
+            <br />
+            Telefon: 0711 111 111
+        </div>
+    </div>
+</div>
+
+<div id="bbackblackcolor" class="background displayer padding pt-0">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1993.8568007175609!2d23.6164473336337!3d46.77902253552029!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sro!4v1742487324224!5m2!1sen!2sro" width="1200" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+
+<div id="bbackgreycolor" class="row background pt-5 pb-4">
+    <div id="form" class="displayer undertitleformat">
+        FORMULAR DE CONTACT
+    </div>
+    <div class="displayer titleformat mt-3">
+        TRIMITE UN MESAJ
+    </div>
+    <div class="displayer minititleformat pt-3">
+            ----------
+    </div>
+</div>
+
+<div id="bbackgreycolor" class="background text-center pt-3 pb-5">
+    <EditForm Model=@formular OnValidSubmit="HandleSubmitFormular">
+        <DataAnnotationsValidator />
+        <InputText class="inputbox" placeholder="Nume" @bind-Value="@formular.FormularName"></InputText>
+        <ValidationMessage For=@(() => formular.FormularName) />
+        <br />
+        <InputText class="inputbox" placeholder="Email" @bind-Value="@formular.FormularEmail"></InputText>
+        <ValidationMessage For=@(() => formular.FormularEmail) />
+        <br />
+        <InputText class="inputbox" placeholder="Telefon" @bind-Value="@formular.FormularPhone"></InputText>
+        <ValidationMessage For=@(() => formular.FormularPhone) />
+        <br />
+        <InputTextArea class="inputbox inputboxm" placeholder="Mesaj" @bind-Value="@formular.FormularDescription"></InputTextArea>
+        <ValidationMessage For=@(() => formular.FormularDescription) />
+        <br />
+        <button class="buttonformat mt-4" type="submit">Trimite</button>
+    </EditForm>
+</div>
+
+@if(isShown == true)
+{
+<div class="messageformat">
+    Mulțumim pentru mesajul dumneavoastră! Acesta a fost trimis echipei noastre.
+</div>
+}
+
+
+
+@code {
+    private FormularDeContactModel formular = new();
+    private bool isShown = false;
+
+    private void HandleSubmitFormular(EditContext editContext)
+    {   
+        var newFormular = (FormularDeContactModel)editContext.Model;
+        formularDbService.AddFormular(newFormular);
+        formular = new FormularDeContactModel();
+        HandleMessage();
+
+    }
+
+    private async void HandleMessage()
+    {
+        isShown = true;
+        await Task.Delay(5000);
+        isShown = false;
+        StateHasChanged();
+    }
+}
+

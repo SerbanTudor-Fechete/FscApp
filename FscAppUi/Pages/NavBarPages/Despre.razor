@@ -1,0 +1,170 @@
+﻿@page "/Despre"
+@inject ReviewDbService reviewDbService;
+@inject DataBaseContext Context;
+
+<div id="bmain1" class="row background">
+    <div class="titleformat displayer mb-3 animation">
+        DESPRE
+    </div>
+    <div class="undertitleformat displayer animation">
+        LASĂ MAI JOS UN COMENTARIU
+    </div>
+</div>
+
+<div id="bbackblackcolor" class="row justify-content-center pt-5 pb-5">
+    <div class="col-5">
+        <img src="/images/Despre.jpg"/>
+    </div>
+    <div id="byellow" class="col-3 text-center displayer">
+        <div class="displayer despreformat">
+            Bun venit la FUN SHOOTING CENTER!
+            <br />
+            O nouă experiență de tragere într-un cadru profesional și sigur! 
+            <br />
+            Vino să te distrezi alături de noi!
+        </div>
+    </div>
+</div>
+<div id="bbackblackcolor" class="row justify-content-center pb-5">
+    <div class="col-6">
+    <div class="displayer undertitleformat pb-3">
+        DESPRE NOI
+    </div>
+        <div class="displayer paragraphformat text-center">
+            Vă oferim o gamă variată de jocuri de tragere perfecte atât pentru amatori cât și pentru profesioniști. Vă puteți distra 
+            alături de noi utilizând pistoale și puști realistice care simulează perfect tragerea cu o armă adevărată. Veți învăța să controlați
+            armele în orice situație fără a fi împiedicați de vreme sau alți factori.  
+        <br />
+        <br />
+            Practicarea tragerii la țintă și vânătorii sunt potrivite atât pentru divertisment individual cât și pentru cel familial.
+        <br />
+            Încercați FUN SHOOTING CENTER pentru o experiență de neuitat!
+        </div>
+    </div>
+</div>
+
+<div id="bbackgreycolor" class="row background pt-5 pb-3">
+    <div class="displayer undertitleformat">
+        CUM TE-AI SIMȚIT?
+    </div>
+    <div class="displayer titleformat mt-3">
+        LASĂ UN COMENTARIU
+    </div>
+    <div class="displayer minititleformat pt-3">
+        ----------
+    </div>
+</div>
+
+<div id="bbackgreycolor" class="background text-center pb-5">
+    <EditForm Model=@review OnValidSubmit="HandleSubmitReview">
+    <DataAnnotationsValidator/>
+        <br />
+        <span class="fa fa-star @color[0]"></span>
+        <span class="fa fa-star @color[1]"></span>
+        <span class="fa fa-star @color[2]"></span>
+        <span class="fa fa-star @color[3]"></span>
+        <span class="fa fa-star @color[4]"></span>
+        <br />
+        <InputSelect class="inputbox" @bind-Value="@review.ReviewRate"  >
+            <option value="0">Alege nota pe care dorești să o dai ...</option>
+            @foreach (var stele in serviciiProperty.stele)
+            {
+                <option value="@stele">@stele  /  5</option>
+                ColorSwitch(review.ReviewRate);
+            }
+                StateHasChanged();
+        </InputSelect>
+        <br />
+        <InputText class="inputbox" placeholder="Nume" @bind-Value="@review.ReviewName"></InputText>
+        <ValidationMessage For=@(() => review.ReviewName)/>
+        <br />
+        <InputText class="inputbox" placeholder="Mesaj" @bind-Value="@review.ReviewDescription"></InputText>
+        <ValidationMessage For=@(() => review.ReviewDescription) />
+        <br />
+        <button class="buttonformat mt-4" type="submit">Postează</button>
+    </EditForm>
+</div>
+
+<div id="bbackblackcolor" class="background pb-5">
+    <div class="minititleformat p-5">
+        DE LA CLIENȚII NOȘTRI:
+    </div>
+    @foreach (var program in Context.Reviews)
+    {      
+         <div class="row justify-content-center pt-3 pb-3">
+            <div class="col-2">
+            </div>
+            <div class="col-2 undertitleformat displayer">
+                @program.ReviewRate
+            </div>
+            <div class="col-2 undertitleformat minidisplayer">
+                @program.ReviewName
+            </div>
+            <div class="col-4 paragraphformat minidisplayer">
+                @program.ReviewDescription
+            </div>
+         </div>
+    }
+</div>
+<div id="bmain2" class="row background">
+    <div class="displayer undertitleformat">
+        BUCURĂTE DE EXPERIENȚA
+    </div>
+    <div class="displayer titleformat mt-2">
+        FUN SHOOTING CENTER
+    </div>
+    <div class="displayer mt-5">
+        <a href="/Programare" class="buttonformat">Programare --></a>
+    </div>
+</div>
+
+@if (isShown == true)
+{
+    <div class="messageformat">
+        Mulțumim pentru comentariul dumneavoastră! Acesta a fost publicat în secțiunea de mai jos.
+    </div>
+}
+
+@code {
+    private ReviewModel review = new();
+    private ServiciiProperty serviciiProperty = new();
+    private bool isShown = false;
+    private List<String> color = new()
+    {   
+        "noncolor",
+        "noncolor",
+        "noncolor",
+        "noncolor",
+        "noncolor",
+        "noncolor"
+    };
+
+    private void HandleSubmitReview(EditContext editContext)
+    {
+        var newReview = (ReviewModel)editContext.Model;
+        reviewDbService.AddReview(newReview);
+        review = new ReviewModel();
+        HandleMessage();
+    }
+
+    private async void HandleMessage()
+    {
+        isShown = true;
+        await Task.Delay(5000);
+        isShown = false;
+        StateHasChanged();
+    }
+
+    private void ColorSwitch(double stars)
+    {
+        for(int i=0; i<=5; i++)
+        {
+            color[i] = "noncolor";
+            if(stars == i)
+            {
+                for (int j = 0; j < i; j++)
+                    color[j] = "color";
+            }
+        }
+    }
+}

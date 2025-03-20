@@ -1,0 +1,36 @@
+#byellow[b-nzut415svd] {
+    background-color: var(--maincolor);
+}
+
+.despreformat[b-nzut415svd] {
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: black;
+}
+
+.minidisplayer[b-nzut415svd] {
+    display: flex;
+    align-items: center;
+}
+
+.comentsformat[b-nzut415svd]{
+    border: solid;
+    border-color: white;
+    border-width: 2px;
+}
+
+.fa-star[b-nzut415svd] {
+    font-size: 1.8rem;
+}
+
+.color[b-nzut415svd] {
+    color: var(--maincolor);
+}
+
+.noncolor[b-nzut415svd] {
+    color: var(--greycolor);
+}
+
+img[b-nzut415svd] {
+    width: 100%;
+}

@@ -5,9 +5,9 @@ A full-stack web application designed as an informational website to showcase de
 - [Features](#features)
 - [Tech Stack](#tech-stack)
 - [Project Structure](#project-structure)
-- [Prerequisites](#prerequesties)
-- [Installation & Setup](#installation--setup)
-- [Usage](#usage)
+- [Prerequisites](#prerequisites)
+- [Installation & Setup](#installation-and-setup)
+- [Screenshots](#screenshots)
 
 
 ## Features
@@ -109,4 +109,17 @@ The project is organized into two main folders: `FscAppLibrary` (backend) and `F
      ```csharp
      Syncfusion.Licensing.SyncfusionLicenseProvider.RegisterLicense("YOUR_LICENSE_KEY_HERE");
      
-## Usage 
+## Screenshots 
+
+![Screenshot 2025-03-20 183645](https://github.com/user-attachments/assets/3564dc5b-3ea1-42e7-8846-63143b9bc2b9)
+
+
+![Screenshot 2025-03-20 183707](https://github.com/user-attachments/assets/9169db07-cbef-49f7-9c83-c161da4fc57a)
+
+
+![Screenshot 2025-03-20 183726](https://github.com/user-attachments/assets/4849a30b-d27e-423d-a25f-c3a191575953)
+
+
+![Screenshot 2025-03-20 183759](https://github.com/user-attachments/assets/4166e502-795b-405d-bf12-eea5a22031d6)
+
+

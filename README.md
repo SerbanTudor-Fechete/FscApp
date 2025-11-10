@@ -1,5 +1,5 @@
 # Fun Shooting Center Web App
-A full-stack web application designed as an informational website to showcase details about shooting games that use safe, realistic guns. The app offers an engaging and interactive platform where users can explore information, reserve sessions, submit questions, and provide feedback.
+A full-stack web application designed as an informational website to showcase details about simulation shooter. The app offers an engaging and interactive platform where users can explore information, reserve sessions, submit questions, and provide feedback.
 
 ## Table of Contents
 - [Features](#features)
